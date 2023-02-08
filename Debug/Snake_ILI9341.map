@@ -945,7 +945,7 @@ Discarded input sections
  .debug_macro   0x0000000000000000      0x26b ./Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_dma.o
  .debug_macro   0x0000000000000000       0x7c ./Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_dma.o
  .debug_line    0x0000000000000000     0x1023 ./Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_dma.o
- .debug_str     0x0000000000000000    0x74c5c ./Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_dma.o
+ .debug_str     0x0000000000000000    0x74c40 ./Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_dma.o
  .comment       0x0000000000000000       0x51 ./Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_dma.o
  .debug_frame   0x0000000000000000      0x14c ./Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_dma.o
  .ARM.attributes
@@ -1114,7 +1114,7 @@ Discarded input sections
  .debug_macro   0x0000000000000000      0x26b ./Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_flash.o
  .debug_macro   0x0000000000000000       0x7c ./Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_flash.o
  .debug_line    0x0000000000000000      0xd10 ./Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_flash.o
- .debug_str     0x0000000000000000    0x74b8e ./Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_flash.o
+ .debug_str     0x0000000000000000    0x74b72 ./Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_flash.o
  .comment       0x0000000000000000       0x51 ./Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_flash.o
  .debug_frame   0x0000000000000000      0x12c ./Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_flash.o
  .ARM.attributes
@@ -1272,7 +1272,7 @@ Discarded input sections
  .debug_macro   0x0000000000000000      0x26b ./Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_flash_ex.o
  .debug_macro   0x0000000000000000       0x7c ./Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_flash_ex.o
  .debug_line    0x0000000000000000      0xe57 ./Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_flash_ex.o
- .debug_str     0x0000000000000000    0x74d3c ./Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_flash_ex.o
+ .debug_str     0x0000000000000000    0x74d20 ./Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_flash_ex.o
  .comment       0x0000000000000000       0x51 ./Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_flash_ex.o
  .debug_frame   0x0000000000000000       0xdc ./Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_flash_ex.o
  .ARM.attributes
@@ -1558,7 +1558,7 @@ Discarded input sections
  .debug_macro   0x0000000000000000      0x26b ./Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_gpio_ex.o
  .debug_macro   0x0000000000000000       0x7c ./Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_gpio_ex.o
  .debug_line    0x0000000000000000      0x7c8 ./Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_gpio_ex.o
- .debug_str     0x0000000000000000    0x748b6 ./Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_gpio_ex.o
+ .debug_str     0x0000000000000000    0x7489a ./Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_gpio_ex.o
  .comment       0x0000000000000000       0x51 ./Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_gpio_ex.o
  .debug_frame   0x0000000000000000       0x40 ./Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_gpio_ex.o
  .ARM.attributes
@@ -1977,7 +1977,7 @@ Discarded input sections
  .debug_macro   0x0000000000000000      0x26b ./Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_pwr.o
  .debug_macro   0x0000000000000000       0x7c ./Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_pwr.o
  .debug_line    0x0000000000000000      0xa61 ./Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_pwr.o
- .debug_str     0x0000000000000000    0x74dfc ./Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_pwr.o
+ .debug_str     0x0000000000000000    0x74de0 ./Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_pwr.o
  .comment       0x0000000000000000       0x51 ./Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_pwr.o
  .debug_frame   0x0000000000000000      0x140 ./Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_pwr.o
  .ARM.attributes
@@ -4163,7 +4163,7 @@ Discarded input sections
  .debug_macro   0x0000000000000000       0x1d ./Src/Adafruit_GFX/glcdfont.o
  .debug_macro   0x0000000000000000      0xa72 ./Src/Adafruit_GFX/glcdfont.o
  .debug_line    0x0000000000000000       0x3f ./Src/Adafruit_GFX/glcdfont.o
- .debug_str     0x0000000000000000     0x2d1a ./Src/Adafruit_GFX/glcdfont.o
+ .debug_str     0x0000000000000000     0x2cfe ./Src/Adafruit_GFX/glcdfont.o
  .comment       0x0000000000000000       0x51 ./Src/Adafruit_GFX/glcdfont.o
  .ARM.attributes
                 0x0000000000000000       0x2d ./Src/Adafruit_GFX/glcdfont.o
@@ -4326,7 +4326,7 @@ Discarded input sections
  .debug_macro   0x0000000000000000       0x7c ./Src/EEPROM/eeprom.o
  .debug_macro   0x0000000000000000       0x10 ./Src/EEPROM/eeprom.o
  .debug_line    0x0000000000000000      0xac7 ./Src/EEPROM/eeprom.o
- .debug_str     0x0000000000000000    0x74fd7 ./Src/EEPROM/eeprom.o
+ .debug_str     0x0000000000000000    0x74fbb ./Src/EEPROM/eeprom.o
  .comment       0x0000000000000000       0x51 ./Src/EEPROM/eeprom.o
  .debug_frame   0x0000000000000000       0xe0 ./Src/EEPROM/eeprom.o
  .ARM.attributes
@@ -4490,7 +4490,7 @@ Discarded input sections
  .debug_macro   0x0000000000000000      0x216 ./Src/Open-DSO-150.o
  .debug_macro   0x0000000000000000       0x3a ./Src/Open-DSO-150.o
  .debug_line    0x0000000000000000      0x979 ./Src/Open-DSO-150.o
- .debug_str     0x0000000000000000    0x75c27 ./Src/Open-DSO-150.o
+ .debug_str     0x0000000000000000    0x75c0b ./Src/Open-DSO-150.o
  .comment       0x0000000000000000       0x51 ./Src/Open-DSO-150.o
  .debug_frame   0x0000000000000000       0x48 ./Src/Open-DSO-150.o
  .ARM.attributes
@@ -4880,7 +4880,7 @@ Discarded input sections
  .debug_macro   0x0000000000000000       0x35 ./Src/capture.o
  .debug_macro   0x0000000000000000       0x20 ./Src/capture.o
  .debug_line    0x0000000000000000     0x152e ./Src/capture.o
- .debug_str     0x0000000000000000    0x77095 ./Src/capture.o
+ .debug_str     0x0000000000000000    0x77079 ./Src/capture.o
  .comment       0x0000000000000000       0x51 ./Src/capture.o
  .debug_frame   0x0000000000000000      0x218 ./Src/capture.o
  .ARM.attributes
@@ -5045,7 +5045,7 @@ Discarded input sections
  .debug_macro   0x0000000000000000       0x16 ./Src/control.o
  .debug_macro   0x0000000000000000       0x10 ./Src/control.o
  .debug_line    0x0000000000000000      0xa65 ./Src/control.o
- .debug_str     0x0000000000000000    0x75ec5 ./Src/control.o
+ .debug_str     0x0000000000000000    0x75ea9 ./Src/control.o
  .comment       0x0000000000000000       0x51 ./Src/control.o
  .debug_frame   0x0000000000000000       0x40 ./Src/control.o
  .ARM.attributes
@@ -5357,7 +5357,7 @@ Discarded input sections
  .debug_macro   0x0000000000000000       0x16 ./Src/display.o
  .debug_macro   0x0000000000000000       0x10 ./Src/display.o
  .debug_line    0x0000000000000000     0x2bb0 ./Src/display.o
- .debug_str     0x0000000000000000    0x79838 ./Src/display.o
+ .debug_str     0x0000000000000000    0x7981c ./Src/display.o
  .comment       0x0000000000000000       0x51 ./Src/display.o
  .debug_frame   0x0000000000000000      0x3b0 ./Src/display.o
  .ARM.attributes
@@ -5543,7 +5543,7 @@ Discarded input sections
  .debug_macro   0x0000000000000000       0x10 ./Src/encoder.o
  .debug_macro   0x0000000000000000       0x16 ./Src/encoder.o
  .debug_line    0x0000000000000000      0xd80 ./Src/encoder.o
- .debug_str     0x0000000000000000    0x7615d ./Src/encoder.o
+ .debug_str     0x0000000000000000    0x76141 ./Src/encoder.o
  .comment       0x0000000000000000       0x51 ./Src/encoder.o
  .debug_frame   0x0000000000000000       0x78 ./Src/encoder.o
  .ARM.attributes
@@ -5776,7 +5776,7 @@ Discarded input sections
  .debug_macro   0x0000000000000000       0x10 ./Src/interface.o
  .debug_macro   0x0000000000000000       0x16 ./Src/interface.o
  .debug_line    0x0000000000000000     0x1473 ./Src/interface.o
- .debug_str     0x0000000000000000    0x76a76 ./Src/interface.o
+ .debug_str     0x0000000000000000    0x76a5a ./Src/interface.o
  .comment       0x0000000000000000       0x51 ./Src/interface.o
  .debug_frame   0x0000000000000000      0x350 ./Src/interface.o
  .ARM.attributes
@@ -5959,7 +5959,7 @@ Discarded input sections
  .debug_macro   0x0000000000000000       0x16 ./Src/io.o
  .debug_macro   0x0000000000000000       0x16 ./Src/io.o
  .debug_line    0x0000000000000000      0xb84 ./Src/io.o
- .debug_str     0x0000000000000000    0x76a06 ./Src/io.o
+ .debug_str     0x0000000000000000    0x769ea ./Src/io.o
  .comment       0x0000000000000000       0x51 ./Src/io.o
  .debug_frame   0x0000000000000000       0xd8 ./Src/io.o
  .ARM.attributes
@@ -7129,7 +7129,7 @@ Discarded input sections
  .debug_macro   0x0000000000000000       0x10 ./Src/zconfig.o
  .debug_macro   0x0000000000000000       0x16 ./Src/zconfig.o
  .debug_line    0x0000000000000000      0xe48 ./Src/zconfig.o
- .debug_str     0x0000000000000000    0x76246 ./Src/zconfig.o
+ .debug_str     0x0000000000000000    0x7622a ./Src/zconfig.o
  .comment       0x0000000000000000       0x51 ./Src/zconfig.o
  .debug_frame   0x0000000000000000       0xdc ./Src/zconfig.o
  .ARM.attributes
@@ -9645,7 +9645,7 @@ LOAD c:/st/stm32cubeide_1.8.0/stm32cubeide/plugins/com.st.stm32cube.ide.mcu.exte
                 0x00000000000012b2       0x2d c:/st/stm32cubeide_1.8.0/stm32cubeide/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.10.3-2021.10.win32_1.0.100.202210260954/tools/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp\libnosys.a(_exit.o)
  .ARM.attributes
                 0x00000000000012df       0x1d c:/st/stm32cubeide_1.8.0/stm32cubeide/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.10.3-2021.10.win32_1.0.100.202210260954/tools/bin/../lib/gcc/arm-none-eabi/10.3.1/thumb/v7-m/nofp/crtn.o
-OUTPUT(SnakeGame.elf elf32-littlearm)
+OUTPUT(Snake_ILI9341.elf elf32-littlearm)
 LOAD linker stubs
 LOAD c:/st/stm32cubeide_1.8.0/stm32cubeide/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.10.3-2021.10.win32_1.0.100.202210260954/tools/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp\libc.a
 LOAD c:/st/stm32cubeide_1.8.0/stm32cubeide/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.10.3-2021.10.win32_1.0.100.202210260954/tools/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v7-m/nofp\libm.a
@@ -10021,59 +10021,59 @@ LOAD c:/st/stm32cubeide_1.8.0/stm32cubeide/plugins/com.st.stm32cube.ide.mcu.exte
  .debug_line    0x0000000000020743     0x11fc ./Src/TFTLib/Adafruit_TFTLCD_8bit_STM32.o
  .debug_line    0x000000000002193f       0x7d ./startup/startup_stm32f103xb.o
 
-.debug_str      0x0000000000000000    0x8d790
- .debug_str     0x0000000000000000    0x74b93 ./Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal.o
-                                      0x74f07 (size before relaxing)
- .debug_str     0x0000000000074b93      0x5e5 ./Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_adc.o
-                                      0x74f6c (size before relaxing)
- .debug_str     0x0000000000075178      0x2d8 ./Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_adc_ex.o
-                                      0x74f43 (size before relaxing)
- .debug_str     0x0000000000075450      0x2d8 ./Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_cortex.o
-                                      0x74f1c (size before relaxing)
- .debug_str     0x0000000000075728      0x371 ./Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_gpio.o
-                                      0x74c3f (size before relaxing)
- .debug_str     0x0000000000075a99      0xca1 ./Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_i2c.o
-                                      0x7579a (size before relaxing)
- .debug_str     0x000000000007673a      0x32b ./Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_rcc.o
-                                      0x74cd2 (size before relaxing)
- .debug_str     0x0000000000076a65       0xf7 ./Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_rcc_ex.o
-                                      0x74a32 (size before relaxing)
- .debug_str     0x0000000000076b5c      0xea6 ./Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_tim.o
-                                      0x759ad (size before relaxing)
- .debug_str     0x0000000000077a02      0x4c0 ./Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_tim_ex.o
-                                      0x7526c (size before relaxing)
- .debug_str     0x0000000000077ec2      0x671 ./Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_uart.o
-                                      0x751bf (size before relaxing)
- .debug_str     0x0000000000078533     0x9b7e ./Modules/BUTTONS/Src/but_controlBlock.o
-                                      0x7e269 (size before relaxing)
- .debug_str     0x00000000000820b1       0x26 ./Modules/BUTTONS/Src/but_detail.o
-                                      0x79965 (size before relaxing)
- .debug_str     0x00000000000820d7     0x2e9c ./Modules/PROCESS/Src/MainThread.o
-                                      0x7cca3 (size before relaxing)
- .debug_str     0x0000000000084f73     0x5bee ./Modules/SNAKE/Src/SnakeLogic.o
-                                      0x1501e (size before relaxing)
- .debug_str     0x000000000008ab61      0x423 ./Modules/SNAKE/Src/SnakeTask.o
-                                      0x815d0 (size before relaxing)
- .debug_str     0x000000000008af84      0x92c ./Src/Adafruit_GFX/Adafruit_GFX.o
-                                      0x76262 (size before relaxing)
- .debug_str     0x000000000008b8b0      0x3c2 ./Src/awrap.o
-                                      0x754b3 (size before relaxing)
- .debug_str     0x000000000008bc72      0x2cd ./Src/main.o
-                                      0x7dbb8 (size before relaxing)
- .debug_str     0x000000000008bf3f       0x24 ./Src/stm32f1xx_hal_msp.o
-                                      0x755b5 (size before relaxing)
- .debug_str     0x000000000008bf63      0x22e ./Src/stm32f1xx_it.o
-                                      0x7cfb5 (size before relaxing)
- .debug_str     0x000000000008c191      0xfb3 ./Src/syscalls.o
-                                      0x75ff9 (size before relaxing)
- .debug_str     0x000000000008d144       0x69 ./Src/system_stm32f1xx.o
-                                      0x74928 (size before relaxing)
- .debug_str     0x000000000008d1ad       0xdd ./Src/tiny_printf.o
-                                       0x73eb (size before relaxing)
- .debug_str     0x000000000008d28a      0x4d7 ./Src/TFTLib/Adafruit_TFTLCD_8bit_STM32.o
-                                      0x75e0f (size before relaxing)
- .debug_str     0x000000000008d761       0x2f ./startup/startup_stm32f103xb.o
-                                         0x78 (size before relaxing)
+.debug_str      0x0000000000000000    0x8d774
+ .debug_str     0x0000000000000000    0x74b77 ./Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal.o
+                                      0x74eeb (size before relaxing)
+ .debug_str     0x0000000000074b77      0x5e5 ./Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_adc.o
+                                      0x74f50 (size before relaxing)
+ .debug_str     0x000000000007515c      0x2d8 ./Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_adc_ex.o
+                                      0x74f27 (size before relaxing)
+ .debug_str     0x0000000000075434      0x2d8 ./Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_cortex.o
+                                      0x74f00 (size before relaxing)
+ .debug_str     0x000000000007570c      0x371 ./Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_gpio.o
+                                      0x74c23 (size before relaxing)
+ .debug_str     0x0000000000075a7d      0xca1 ./Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_i2c.o
+                                      0x7577e (size before relaxing)
+ .debug_str     0x000000000007671e      0x32b ./Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_rcc.o
+                                      0x74cb6 (size before relaxing)
+ .debug_str     0x0000000000076a49       0xf7 ./Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_rcc_ex.o
+                                      0x74a16 (size before relaxing)
+ .debug_str     0x0000000000076b40      0xea6 ./Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_tim.o
+                                      0x75991 (size before relaxing)
+ .debug_str     0x00000000000779e6      0x4c0 ./Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_tim_ex.o
+                                      0x75250 (size before relaxing)
+ .debug_str     0x0000000000077ea6      0x671 ./Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal_uart.o
+                                      0x751a3 (size before relaxing)
+ .debug_str     0x0000000000078517     0x9b7e ./Modules/BUTTONS/Src/but_controlBlock.o
+                                      0x7e24d (size before relaxing)
+ .debug_str     0x0000000000082095       0x26 ./Modules/BUTTONS/Src/but_detail.o
+                                      0x79949 (size before relaxing)
+ .debug_str     0x00000000000820bb     0x2e9c ./Modules/PROCESS/Src/MainThread.o
+                                      0x7cc87 (size before relaxing)
+ .debug_str     0x0000000000084f57     0x5bee ./Modules/SNAKE/Src/SnakeLogic.o
+                                      0x15002 (size before relaxing)
+ .debug_str     0x000000000008ab45      0x423 ./Modules/SNAKE/Src/SnakeTask.o
+                                      0x815b4 (size before relaxing)
+ .debug_str     0x000000000008af68      0x92c ./Src/Adafruit_GFX/Adafruit_GFX.o
+                                      0x76246 (size before relaxing)
+ .debug_str     0x000000000008b894      0x3c2 ./Src/awrap.o
+                                      0x75497 (size before relaxing)
+ .debug_str     0x000000000008bc56      0x2cd ./Src/main.o
+                                      0x7db9c (size before relaxing)
+ .debug_str     0x000000000008bf23       0x24 ./Src/stm32f1xx_hal_msp.o
+                                      0x75599 (size before relaxing)
+ .debug_str     0x000000000008bf47      0x22e ./Src/stm32f1xx_it.o
+                                      0x7cf99 (size before relaxing)
+ .debug_str     0x000000000008c175      0xfb3 ./Src/syscalls.o
+                                      0x75fdd (size before relaxing)
+ .debug_str     0x000000000008d128       0x69 ./Src/system_stm32f1xx.o
+                                      0x7490c (size before relaxing)
+ .debug_str     0x000000000008d191       0xdd ./Src/tiny_printf.o
+                                       0x73cf (size before relaxing)
+ .debug_str     0x000000000008d26e      0x4d7 ./Src/TFTLib/Adafruit_TFTLCD_8bit_STM32.o
+                                      0x75df3 (size before relaxing)
+ .debug_str     0x000000000008d745       0x2f ./startup/startup_stm32f103xb.o
+                                         0x5c (size before relaxing)
 
 .comment        0x0000000000000000       0x50
  .comment       0x0000000000000000       0x50 ./Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal.o
