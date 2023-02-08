@@ -16636,7 +16636,7 @@ void SnakeTask()
  80096b6:	eb02 0251 	add.w	r2, r2, r1, lsr #1
  80096ba:	4293      	cmp	r3, r2
  80096bc:	d114      	bne.n	80096e8 <_Z9SnakeTaskv+0xb0>
- 80096be:	2e32      	cmp	r6, #50	; 0x32
+ 80096be:	2e64      	cmp	r6, #100	; 0x64
 				currentDelay -= 25;
  80096c0:	bf18      	it	ne
  80096c2:	3e19      	subne	r6, #25
