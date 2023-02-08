@@ -1,0 +1,20 @@
+../Src/capture.cpp:49:6:void stopSampling()	0	static
+../Src/capture.cpp:165:6:void startScanTimeout(int16_t)	16	static
+../Src/capture.cpp:176:6:void triggerISR()	0	static
+../Src/capture.cpp:56:17:void HAL_GPIO_TRIG_IRQHandler(uint16_t)	8	static
+../Src/capture.cpp:192:6:void scanTimeoutISR()	8	static
+../Src/capture.cpp:68:6:void HAL_TIM_OC_DelayElapsedCallback(TIM_HandleTypeDef*)	8	static
+../Src/capture.cpp:312:6:void snapMicros()	8	static
+../Src/capture.cpp:203:6:void startSampling(int16_t)	24	static
+../Src/capture.cpp:148:6:void sampleWaves(bool)	8	static
+../Src/capture.cpp:397:6:void printSample(uint16_t, float)	16	static
+../Src/capture.cpp:323:6:void dumpSamples()	24	static
+../Src/capture.cpp:414:6:void loopThroughRange(uint8_t, uint8_t, uint16_t*)	40	static
+../Src/capture.cpp:436:6:void getCalibSamples(uint8_t, uint16_t*)	16	static
+../Src/capture.cpp:456:6:void triggerTestISR()	0	static
+../Src/capture.cpp:461:6:void autoCal()	72	static
+../Src/capture.cpp:546:6:void set_trigger_level(int16_t)	0	static
+../Src/capture.cpp:563:6:void arm_trigger(bool, bool)	32	static
+../Src/capture.cpp:74:6:void setTriggerSourceAndDir(uint8_t, uint8_t)	32	static
+../Src/capture.cpp:588:6:void disable_trigger()	0	static
+../Src/capture.cpp:593:6:void HAL_ADC_LevelOutOfWindowCallback(ADC_HandleTypeDef*)	0	static

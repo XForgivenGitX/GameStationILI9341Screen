@@ -1,0 +1,8 @@
+../Src/EEPROM/eeprom.cpp:51:9:bool EE_LL_Format(uint16_t, uint16_t)	40	static
+../Src/EEPROM/eeprom.cpp:72:9:bool EE_LL_Read(uint16_t, uint16_t, uint16_t, uint8_t*)	0	static
+../Src/EEPROM/eeprom.cpp:147:9:bool EE_LL_Write(uint16_t, uint16_t, uint16_t, uint8_t*)	40	static
+../Src/EEPROM/eeprom.cpp:193:6:bool EE_Format()	8	static
+../Src/EEPROM/eeprom.cpp:199:6:bool EE_Read(uint16_t, uint8_t*)	8	static
+../Src/EEPROM/eeprom.cpp:205:6:bool EE_Write(uint16_t, uint8_t)	0	static
+../Src/EEPROM/eeprom.cpp:211:6:bool EE_Reads(uint16_t, uint16_t, uint32_t*)	0	static
+../Src/EEPROM/eeprom.cpp:224:7:bool EE_Writes(uint16_t, uint16_t, uint32_t*)	32	static

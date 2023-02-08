@@ -1,0 +1,2 @@
+../Src/Open-DSO-150.cpp:13:6:void dsosetup()	24	static
+../Src/Open-DSO-150.cpp:38:6:void dsoloop()	8	static

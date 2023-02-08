@@ -1,0 +1,6 @@
+../Modules/BUTTONS/Src/but_detail.cpp:68:10:uint32_t but::ButtonWrapper::DurationTime() const	8	static
+../Modules/BUTTONS/Src/but_detail.cpp:4:6:void but::ButtonWrapper::NevermindHandle(bool)	8	static
+../Modules/BUTTONS/Src/but_detail.cpp:20:6:void but::ButtonWrapper::PressBounceHandle(bool)	16	static
+../Modules/BUTTONS/Src/but_detail.cpp:35:6:void but::ButtonWrapper::SliceWaitHandle(bool)	8	static
+../Modules/BUTTONS/Src/but_detail.cpp:58:6:void but::ButtonWrapper::ReleaseBounceHandle(bool)	16	static
+../Modules/BUTTONS/Src/but_detail.cpp:73:6:bool but::ButtonWrapper::ReadPin() const	8	static

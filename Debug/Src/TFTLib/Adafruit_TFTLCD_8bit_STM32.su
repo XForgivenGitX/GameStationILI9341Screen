@@ -1,0 +1,21 @@
+../Src/TFTLib/Adafruit_TFTLCD_8bit_STM32.cpp:333:13:void writeCommand(uint8_t)	4	static
+../Src/TFTLib/Adafruit_TFTLCD_8bit_STM32.cpp:75:6:void ili9341_reset()	16	static
+../Src/TFTLib/Adafruit_TFTLCD_8bit_STM32.cpp:110:6:void flood(uint16_t, uint32_t)	20	static
+../Src/TFTLib/Adafruit_TFTLCD_8bit_STM32.cpp:259:6:void pushColors(uint16_t*, uint8_t, bool)	16	static
+../Src/TFTLib/Adafruit_TFTLCD_8bit_STM32.cpp:284:10:uint16_t color565(uint8_t, uint8_t, uint8_t)	0	static
+../Src/TFTLib/Adafruit_TFTLCD_8bit_STM32.cpp:343:9:uint8_t read8_()	16	static
+../Src/TFTLib/Adafruit_TFTLCD_8bit_STM32.cpp:357:10:uint32_t readReg32(uint8_t)	24	static
+../Src/TFTLib/Adafruit_TFTLCD_8bit_STM32.cpp:383:10:uint16_t readReg(uint8_t)	24	static
+../Src/TFTLib/Adafruit_TFTLCD_8bit_STM32.cpp:414:6:void writeRegister8(uint8_t, uint8_t)	8	static
+../Src/TFTLib/Adafruit_TFTLCD_8bit_STM32.cpp:407:6:void writeRegisterPair(uint8_t, uint8_t, uint16_t)	16	static
+../Src/TFTLib/Adafruit_TFTLCD_8bit_STM32.cpp:68:6:void ili9341_setLR()	8	static
+../Src/TFTLib/Adafruit_TFTLCD_8bit_STM32.cpp:423:6:void writeRegister16(uint16_t, uint16_t)	8	static
+../Src/TFTLib/Adafruit_TFTLCD_8bit_STM32.cpp:433:6:void writeRegister32(uint8_t, uint32_t)	8	static
+../Src/TFTLib/Adafruit_TFTLCD_8bit_STM32.cpp:91:6:void setAddrWindow(int, int, int, int)	16	static
+../Src/TFTLib/Adafruit_TFTLCD_8bit_STM32.cpp:27:10:uint16_t ili9341_begin()	8	static
+../Src/TFTLib/Adafruit_TFTLCD_8bit_STM32.cpp:159:6:void drawFastHLine(int16_t, int16_t, int16_t, uint16_t)	16	static
+../Src/TFTLib/Adafruit_TFTLCD_8bit_STM32.cpp:183:6:void drawFastVLine(int16_t, int16_t, int16_t, uint16_t)	16	static
+../Src/TFTLib/Adafruit_TFTLCD_8bit_STM32.cpp:206:6:void fillRect(int16_t, int16_t, int16_t, int16_t, uint16_t)	24	static
+../Src/TFTLib/Adafruit_TFTLCD_8bit_STM32.cpp:237:6:void fillScreen(uint16_t)	8	static
+../Src/TFTLib/Adafruit_TFTLCD_8bit_STM32.cpp:244:6:void drawPixel(int16_t, int16_t, uint16_t)	8	static
+../Src/TFTLib/Adafruit_TFTLCD_8bit_STM32.cpp:291:6:void setRotation(uint8_t)	8	static
