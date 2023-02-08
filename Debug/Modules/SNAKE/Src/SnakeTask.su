@@ -1,5 +1,0 @@
-../Modules/SNAKE/Src/SnakeTask.cpp:29:6:void printSquare(snake::SnakeNode&)	16	static
-../Modules/SNAKE/Src/SnakeTask.cpp:9:6:void SnakeButtonHandler(snake::ClassicSnake&)	8	static
-../Modules/SNAKE/Src/SnakeTask.cpp:35:10:uint32_t computeTimeDuration(uint32_t)	8	static
-../Modules/SNAKE/Src/SnakeTask.cpp:40:6:void SnakeTask()	120	static
-../Modules/SNAKE/Src/SnakeTask.cpp:78:6:void SnakeInterface()	24	static

@@ -1,2 +1,0 @@
-../Src/control.cpp:75:6:void captureDisplayCycle(bool)	8	static
-../Src/control.cpp:16:6:void controlLoop()	8	static

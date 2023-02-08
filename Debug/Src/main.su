@@ -1,3 +1,0 @@
-../Src/main.cpp:137:6:void SystemClock_Config()	88	static
-../Src/main.cpp:92:5:int main()	88	static
-../Src/main.cpp:537:6:void _Error_Handler(const char*, int)	0	static
