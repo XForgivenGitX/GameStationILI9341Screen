@@ -1,7 +1,7 @@
 #pragma once
 #include <BUTTONS/Inc/but_main.hpp>
 namespace but{
-
+//fdfdfdfdfdfdf
 typedef uint16_t Definition;
 constexpr Definition SHORT_CLICK 					= 50;
 constexpr Definition HOLD_CLICK  					= 350;
