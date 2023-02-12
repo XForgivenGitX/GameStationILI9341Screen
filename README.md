@@ -1,2 +1,2 @@
 # SnakeGame
- A classic snake game implemented on the STM32F103 microcontroller with IL9341 display output.
+Game station with screen output ILI9341 based on the STM32F103 microcontroller.
