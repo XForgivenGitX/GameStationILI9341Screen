@@ -1,12 +1,6 @@
 #include <Inc/SnakeLogic.hpp>
 using namespace snake;
 
-coord_t random_generator::generate(coord_t max, coord_t min)
-{
-	std::uniform_int_distribution<coord_t> distance{ max , min };
-	return distance(generator);
-}
-
 Coordinate& ClassicSnake::Promote(Coordinate& coord)
 {
 	switch (currentDir)

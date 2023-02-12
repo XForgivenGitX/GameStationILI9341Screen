@@ -10,13 +10,14 @@ void MainInit()
 	tft_begin();
 	tft_setRotation(true);
 }
-uint32_t tmp = 1;
+
 void MainThread()
 {
 	MainInit();
 	while(true)
 	{
 		SnakeTask();
+		TetrisTask();
 	}
 }
 

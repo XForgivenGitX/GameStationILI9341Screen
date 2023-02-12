@@ -14,6 +14,7 @@ RM := rm -rf
 -include Src/EEPROM/subdir.mk
 -include Src/Adafruit_GFX/subdir.mk
 -include Src/subdir.mk
+-include Modules/TETRIS/Src/subdir.mk
 -include Modules/SNAKE/Src/subdir.mk
 -include Modules/PROCESS/Src/subdir.mk
 -include Modules/BUTTONS/Src/subdir.mk

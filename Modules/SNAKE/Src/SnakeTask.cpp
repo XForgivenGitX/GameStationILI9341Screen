@@ -26,15 +26,10 @@ void SnakeButtonHandler(ClassicSnake& cd)
 	}
 }
 
-void printSquare(SnakeNode& sn)
+void printSnakeSquare(SnakeNode& sn)
 {
 	tft_fillRoundRect(sn.Coord.X * SIZE_SIDE_SQUARE, sn.Coord.Y *
 			SIZE_SIDE_SQUARE, SIZE_SIDE_SQUARE, SIZE_SIDE_SQUARE, RADIUS_ROUNDING, sn.color);
-}
-
-uint32_t computeTimeDuration(uint32_t time)
-{
-	return HAL_GetTick() - time;
 }
 
 void SnakeTask()
@@ -48,7 +43,7 @@ void SnakeTask()
 	//SnakeInterface();
 	tft_fillScreen(ILI9341_BLUE);
 
-	printSquare(SnakeObj.fruitCoordinate);
+	printSnakeSquare(SnakeObj.fruitCoordinate);
 
 	while(!SnakeObj.CheckSnakeCollision(*SnakeObj.mySnake.rbegin()))
 	{
@@ -59,11 +54,11 @@ void SnakeTask()
 			SnakeObj.AddNodeToEnd();
 			while(SnakeObj.CheckSnakeCollision(SnakeObj.fruitCoordinate))
 				SnakeObj.GenerateNewFruit();
-			printSquare(SnakeObj.fruitCoordinate);
+			printSnakeSquare(SnakeObj.fruitCoordinate);
 			if(!((SnakeObj.mySnake.size() - 1) % 3) && (currentDelay != FINAL_SPEED_GAME))
 				currentDelay -= 25;
 		}
-		std::for_each(SnakeObj.mySnake.begin(), SnakeObj.mySnake.end(), printSquare);
+		std::for_each(SnakeObj.mySnake.begin(), SnakeObj.mySnake.end(), printSnakeSquare);
 		tmpDir = SnakeObj.currentDir;
 		while(computeTimeDuration(time) < currentDelay)
 		{

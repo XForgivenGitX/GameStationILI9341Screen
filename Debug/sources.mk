@@ -35,6 +35,7 @@ Drivers/STM32F1xx_HAL_Driver/Src \
 Modules/BUTTONS/Src \
 Modules/PROCESS/Src \
 Modules/SNAKE/Src \
+Modules/TETRIS/Src \
 Src/Adafruit_GFX \
 Src/EEPROM \
 Src \

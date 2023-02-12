@@ -38,7 +38,10 @@
 /* Includes ------------------------------------------------------------------*/
 #include <main.hpp>
 #include "stm32f1xx_hal.h"
+
+//////////////////
 #include <Inc/MainThread.hpp>
+//////////////////
 
 /* USER CODE BEGIN Includes */
 

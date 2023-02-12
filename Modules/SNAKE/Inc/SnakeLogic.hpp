@@ -1,7 +1,5 @@
 #pragma once
-#include <list>
-#include <random>
-#include <algorithm>
+#include <Inc/General.hpp>
 
 namespace snake
 {
@@ -15,24 +13,12 @@ constexpr directions defDirections = directions::UP;
 constexpr color_t defColor = 0;
 constexpr color_t defNodeColor = 0;
 
-struct Coordinate
-{
-	coord_t X = 0;
-	coord_t Y = 0;
-};
 struct SnakeNode
 {
-	Coordinate Coord;
+	Coordinate Coord{-1, -1};
 	color_t color;
 	SnakeNode(Coordinate Coord_, color_t color_) : Coord{ Coord_ }, color(color_) {}
 	SnakeNode() = default;
-};
-
-struct random_generator
-{
-	coord_t generate(coord_t max, coord_t min);
-private:
-	std::default_random_engine generator{};
 };
 
 

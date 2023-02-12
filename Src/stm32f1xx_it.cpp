@@ -38,7 +38,9 @@
 
 /* USER CODE BEGIN 0 */
 
+//////////////////////
 #include <Inc/MainThread.hpp>
+//////////////////////
 
 extern TIM_HandleTypeDef htim2;  //TIMER ScanTimeout
 extern ADC_HandleTypeDef hadc1;  //ADC
@@ -181,9 +183,9 @@ void SysTick_Handler(void)
 {
   /* USER CODE BEGIN SysTick_IRQn 0 */
 
-	/////////////
-		SysTickThread();
-  /////////////
+	///////////////
+	SysTickThread();
+	///////////////
 
 		/* USER CODE END SysTick_IRQn 0 */
   HAL_IncTick();
