@@ -12,12 +12,12 @@ bool TetrisButtonHandler(TetrisFigure& figure, uint32_t& delay)
 	{
 		if(but4->LogicState_ == LogicState::WAS_PRESSED)
 		{
-			delay = TetrisLowDelay;
+			delay = TETRIS_LOW_DELAY;
 			but4->LogicState_ = LogicState::WAS_SHORT_PRESSED;
 		}
 		else if(but4->LogicState_ == LogicState::WAS_RELEASED)
 		{
-			delay = TetrisHighDelay;
+			delay = TETRIS_HIGH_DELAY;
 			but4->LogicState_ = LogicState::NONE;
 		}
 
@@ -40,19 +40,43 @@ bool TetrisButtonHandler(TetrisFigure& figure, uint32_t& delay)
 	return false;
 }
 
-void PrintTetrisFigure(const TetrisFigure& figure, color_t color)
+void PrintTetrisFigure(const block_t& block, const Coordinate& coord, size_t side, color_t color)
 {
 	size_t row = 0, col = 0;
-	std::for_each(figure.figure.begin(), figure.figure.end(), [&](auto& block)
+	std::for_each(block.begin(), block.end(), [&](auto& subblock)
 	{
-		if(block.isFeeled)
+		if(subblock.isFeeled && (coord.Y + row >= HIDDEN_ROW_OF_FIELD))
 		{
-			tft_fillRoundRect(figure.coord.X + col, figure.coord.Y + row - HIDDEN_ROW_OF_FIELD,
-				10, 10, 3, color);
+			tft_fillRoundRect((coord.X + col) * SIDE_SQUARE,
+					(coord.Y + row - HIDDEN_ROW_OF_FIELD) * SIDE_SQUARE,
+					SIDE_SQUARE, SIDE_SQUARE, SQUARE_RADIUS, color);
 		}
-		if (++col == figure.side) { ++row, col = 0; }
+		if (++col == side) { ++row, col = 0; }
 	});
 }
+
+void PrintTetrisFigure(const block_t& block, const Coordinate& coord, size_t side)
+{
+	size_t row = 0, col = 0;
+	std::for_each(block.begin(), block.end(), [&](auto& subblock)
+	{
+		if(subblock.isFeeled && (coord.Y + row >= HIDDEN_ROW_OF_FIELD))
+		{
+			tft_fillRoundRect((coord.X + col) * SIDE_SQUARE,
+					(coord.Y + row - HIDDEN_ROW_OF_FIELD) * SIDE_SQUARE,
+					SIDE_SQUARE, SIDE_SQUARE, SQUARE_RADIUS, subblock.color);
+		}
+		if (++col == side) { ++row, col = 0; }
+	});
+}
+void PrintedField(TetrisManager& manager)
+{
+	for(auto i = 0; i < ROW_OF_FIELD; ++i)
+		for(auto j = 0; j < COL_OF_FIELD; ++j)
+			tft_fillRoundRect(j * SIDE_SQUARE, i * SIDE_SQUARE,
+			SIDE_SQUARE, SIDE_SQUARE, SQUARE_RADIUS, manager.field[i * j].color);
+}
+
 
 void TetrisTask()
 {
@@ -60,20 +84,34 @@ void TetrisTask()
 	tft_setRotation(PORTRAIT_ORIENTATION);
 
 	TetrisManager manager;
-	uint32_t delay = TetrisHighDelay;
+
+	uint32_t delay = TETRIS_HIGH_DELAY;
 	uint32_t time = HAL_GetTick();
-	uint32_t numFigure = manager.generator.generate(0, QUANTITY_FIGURE - 1);
 
 	while(manager.END_OF_GAME)
 	{
-		if(!manager.myFigure[numFigure].MoveDown())
+		if(!manager.currentFigure->MoveDown())
 		{
-			numFigure = manager.generator.generate(0, QUANTITY_FIGURE - 1);
+			if(manager.EraseFilledRow())
+			{
+				PrintedField(manager);
+			}
+			manager.GenerateNewFigure();
 		}
+		else
+		{
+			PrintTetrisFigure(manager.currentFigure->prevFigure, manager.currentFigure->prevCoord, manager.currentFigure->side, BACKGROUND);
+		}
+		PrintTetrisFigure(manager.currentFigure->figure, manager.currentFigure->coord, manager.currentFigure->side);
 		while(computeTimeDuration(time) < delay)
 		{
-			TetrisButtonHandler(manager.myFigure[numFigure], delay);
+			if(TetrisButtonHandler(*manager.currentFigure, delay))
+			{
+				PrintTetrisFigure(manager.currentFigure->prevFigure, manager.currentFigure->prevCoord, manager.currentFigure->side, BACKGROUND);
+				PrintTetrisFigure(manager.currentFigure->figure, manager.currentFigure->coord, manager.currentFigure->side);
+			}
 		}
 		time = HAL_GetTick();
 	}
+	while(but1->LogicState_ != LogicState::WAS_HOLDED)computeTimeDuration(time);
 }

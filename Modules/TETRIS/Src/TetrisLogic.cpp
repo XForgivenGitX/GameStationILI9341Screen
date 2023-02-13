@@ -4,12 +4,17 @@ TetrisManager::TetrisManager()
 {
 	field.resize(ROW_OF_FIELD * COL_OF_FIELD);
 	myFigure = CreateFigure(*this);
+	currentFigure = myFigure.begin() + generator.generate(0, QUANTITY_FIGURE - 1);
 }
-
-void TetrisManager::EraseFilledRow()
+void TetrisManager::GenerateNewFigure()
+{
+	currentFigure = myFigure.begin() + generator.generate(0, QUANTITY_FIGURE - 1);
+}
+bool TetrisManager::EraseFilledRow()
 {
 	auto itBeg = field.begin();
 	auto itEnd = itBeg;
+	bool returnStatus = false;
 	size_t row = 0;
 	for (; itBeg != field.end(); itBeg += COL_OF_FIELD, ++row)
 	{
@@ -21,12 +26,14 @@ void TetrisManager::EraseFilledRow()
 			field.insert(field.begin(), COL_OF_FIELD, {});
 			itBeg = field.begin() + (COL_OF_FIELD * row);
 			itEnd = itBeg + COL_OF_FIELD;
+			returnStatus = true;
 		}
 	}
+	return returnStatus;
 }
 
 TetrisFigure::TetrisFigure(block_t&& figure_, Coordinate coordFigure_, size_t sideFigure_, color_t colorFigure, TetrisManager& manager_)
-	: figure(std::move(figure_)), initFigure(figure), coord(coordFigure_), initCoord(coordFigure_), manager(manager_), side(sideFigure_)
+	: figure(std::move(figure_)), initFigure(figure), coord(coordFigure_), prevCoord(coordFigure_), initCoord(coordFigure_), manager(manager_), side(sideFigure_)
 {
 	std::for_each(figure.begin(), figure.end(), [&](auto& part)
 		{if (part.isFeeled) part.color = colorFigure; });
@@ -35,6 +42,7 @@ TetrisFigure::TetrisFigure(block_t&& figure_, Coordinate coordFigure_, size_t si
 void TetrisFigure::Rotate()
 {
 	prevFigure = figure;
+	prevCoord = coord;
 	auto tmpCoord = coord;
 	auto counter = 1;
 	size_t row = side - counter;
@@ -49,6 +57,8 @@ void TetrisFigure::Rotate()
 }
 void TetrisFigure::MoveHorizontally(Directions direction)
 {
+	prevFigure = figure;
+	prevCoord = coord;
 	auto tmpCoord = coord;
 	switch (direction)
 	{
@@ -61,6 +71,8 @@ void TetrisFigure::MoveHorizontally(Directions direction)
 }
 bool TetrisFigure::MoveDown()
 {
+	prevFigure = figure;
+	prevCoord = coord;
 	++coord.Y;
 	if (CheckBoundaries() || isIntersectionBlocks())
 	{
@@ -155,7 +167,7 @@ void TetrisFigure::FillFieldFigure()
 }
 bool TetrisFigure::CheckEndGame()
 {
-	if((coord.Y < HIDDEN_ROW_OF_FIELD) && ((coord.Y + (side - 1) >= HIDDEN_ROW_OF_FIELD)))
+	if((coord.Y < HIDDEN_ROW_OF_FIELD) && ((coord.Y + (side - 1) >= HIDDEN_ROW_OF_FIELD)))//?
 	{
 		if(isContainsUnitInRow((HIDDEN_ROW_OF_FIELD - 1) - coord.Y))
 		{

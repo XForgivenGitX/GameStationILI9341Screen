@@ -8,8 +8,9 @@
 #include <list>
 #include <Adafruit_GFX.hpp>
 
-#define PORTRAIT_ORIENTATION 0
-#define RECTANGLE_ORIENTATION 1
+#define PORTRAIT_ORIENTATION 	0
+#define RECTANGLE_ORIENTATION 	1
+
 struct Coordinate
 {
 	int32_t X;

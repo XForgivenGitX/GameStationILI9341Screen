@@ -1,6 +1,15 @@
 #pragma once
 #include <Inc/General.hpp>
 
+/*
+ * 1 add const
+ * 2 change structure
+ * 3 add namespace
+ * 4 remove printfigure-function overload
+ * 5...
+ *
+ * */
+
 constexpr auto ROW_OF_FIELD			= 25;
 constexpr auto HIDDEN_ROW_OF_FIELD 	= 4;
 constexpr auto COL_OF_FIELD			= 16;
@@ -34,29 +43,33 @@ struct PartTetrisBlock
 
 struct TetrisManager
 {
+	std::vector<TetrisFigure>::iterator currentFigure;
 	block_t field{};
-	std::vector<TetrisFigure> myFigure{};
-	random_generator generator{};
 	bool END_OF_GAME = true;
 
 	TetrisManager();
-	void EraseFilledRow();
+	bool EraseFilledRow();
+	void GenerateNewFigure();
+
+private:
+	std::vector<TetrisFigure> myFigure{};
+	random_generator generator{};
 };
 
 struct TetrisFigure
 {
 	block_t figure, prevFigure;
-	block_t initFigure;
+	const block_t initFigure;
 
-	Coordinate coord;
-	Coordinate initCoord;
+	Coordinate coord, prevCoord;
+	const Coordinate initCoord;
 
 	TetrisManager& manager;
-	size_t side;
+	const size_t side;
 
 	TetrisFigure(block_t&& figure_, Coordinate coordFigure_, size_t sideFigure_,
 		color_t colorFigure, TetrisManager& manager_);
-	//TetrisFigure(const TetrisFigure& TF) = delete;
+
 	void Rotate();
 	void MoveHorizontally(Directions direction);
 	bool MoveDown();
