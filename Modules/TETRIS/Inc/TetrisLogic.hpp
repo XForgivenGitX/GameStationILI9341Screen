@@ -46,17 +46,17 @@ struct TetrisManager
 struct TetrisFigure
 {
 	block_t figure, prevFigure;
-	const block_t initFigure;
+	block_t initFigure;
 
 	Coordinate coord;
-	const Coordinate initCoord;
+	Coordinate initCoord;
 
 	TetrisManager& manager;
-	const size_t side;
+	size_t side;
 
 	TetrisFigure(block_t&& figure_, Coordinate coordFigure_, size_t sideFigure_,
 		color_t colorFigure, TetrisManager& manager_);
-
+	//TetrisFigure(const TetrisFigure& TF) = delete;
 	void Rotate();
 	void MoveHorizontally(Directions direction);
 	bool MoveDown();

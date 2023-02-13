@@ -40,9 +40,18 @@ bool TetrisButtonHandler(TetrisFigure& figure, uint32_t& delay)
 	return false;
 }
 
-void printTetrisSquare()
+void PrintTetrisFigure(const TetrisFigure& figure, color_t color)
 {
-
+	size_t row = 0, col = 0;
+	std::for_each(figure.figure.begin(), figure.figure.end(), [&](auto& block)
+	{
+		if(block.isFeeled)
+		{
+			tft_fillRoundRect(figure.coord.X + col, figure.coord.Y + row - HIDDEN_ROW_OF_FIELD,
+				10, 10, 3, color);
+		}
+		if (++col == figure.side) { ++row, col = 0; }
+	});
 }
 
 void TetrisTask()
