@@ -10,9 +10,9 @@
  *
  * */
 
-constexpr auto ROW_OF_FIELD			= 25;
-constexpr auto HIDDEN_ROW_OF_FIELD 	= 4;
-constexpr auto COL_OF_FIELD			= 16;
+constexpr auto ROW_OF_FIELD			= 20;
+constexpr auto HIDDEN_ROW_OF_FIELD	= 4;
+constexpr auto COL_OF_FIELD			= 10;//21
 constexpr auto QUANTITY_FIGURE		= 7;
 
 struct PartTetrisBlock;
@@ -21,16 +21,16 @@ struct TetrisFigure;
 using color_t = uint32_t;
 using block_t = std::vector<PartTetrisBlock>;
 
-enum TetrisColors
+enum Colors
 {
-	BACKGROUND 	= ILI9341_BLACK,
-	FIG1COLOR 	= ILI9341_BLUE,
-	FIG2COLOR 	= ILI9341_DARKCYAN,
-	FIG3COLOR 	= ILI9341_OLIVE,
-	FIG4COLOR 	= ILI9341_GREEN,
-	FIG5COLOR 	= ILI9341_RED,
-	FIG6COLOR 	= ILI9341_PURPLE,
-	FIG7COLOR 	= ILI9341_YELLOW
+	BACKGROUND = ILI9341_NAVY,
+	FIG1COLOR = ILI9341_CYAN,
+	FIG2COLOR = ILI9341_GREEN,
+	FIG3COLOR = ILI9341_OLIVE,
+	FIG4COLOR = ILI9341_RED,
+	FIG5COLOR = ILI9341_PINK,
+	FIG6COLOR = ILI9341_WHITE,
+	FIG7COLOR = ILI9341_YELLOW
 };
 enum class Directions{LEFT, RIGHT};
 
@@ -45,24 +45,21 @@ struct TetrisManager
 {
 	std::vector<TetrisFigure>::iterator currentFigure;
 	block_t field{};
-	bool END_OF_GAME = true;
+	bool END_OF_GAME = false;
 
 	TetrisManager();
 	bool EraseFilledRow();
 	void GenerateNewFigure();
 
 private:
-	std::vector<TetrisFigure> myFigure{};
+	std::vector<TetrisFigure> myFigure;
 	random_generator generator{};
 };
 
 struct TetrisFigure
 {
-	block_t figure, prevFigure;
-	const block_t initFigure;
-
-	Coordinate coord, prevCoord;
-	const Coordinate initCoord;
+	block_t figure, prevFigure, initFigure;
+	Coordinate initCoord, prevCoord, coord;
 
 	TetrisManager& manager;
 	const size_t side;
@@ -81,8 +78,8 @@ private:
 	bool isContainsUnitInRow(size_t irow);
 	bool isIntersectionBlocks();
 
-	bool CheckEndGame();
 	void FillFieldFigure();
+	bool CheckEndGame();
 };
 
-std::vector<TetrisFigure>&& CreateFigure(TetrisManager& man);
+std::vector<TetrisFigure> CreateFigure(TetrisManager& man);

@@ -8,17 +8,17 @@ extern but::ButtonWrapper* but4;
 bool TetrisButtonHandler(TetrisFigure& figure, uint32_t& delay)
 {
 
-	if(but4->LogicState_ != LogicState::NONE)
+	if(but3->LogicState_ != LogicState::NONE)
 	{
-		if(but4->LogicState_ == LogicState::WAS_PRESSED)
+		if(but3->LogicState_ == LogicState::WAS_PRESSED)
 		{
 			delay = TETRIS_LOW_DELAY;
-			but4->LogicState_ = LogicState::WAS_SHORT_PRESSED;
+			but3->LogicState_ = LogicState::WAS_SHORT_PRESSED;
 		}
-		else if(but4->LogicState_ == LogicState::WAS_RELEASED)
+		else if(but3->LogicState_ == LogicState::WAS_RELEASED)
 		{
 			delay = TETRIS_HIGH_DELAY;
-			but4->LogicState_ = LogicState::NONE;
+			but3->LogicState_ = LogicState::NONE;
 		}
 
 	}
@@ -27,88 +27,88 @@ bool TetrisButtonHandler(TetrisFigure& figure, uint32_t& delay)
 		but1->LogicState_ = LogicState::NONE;
 		return true;
 	}
-	else if(but2->LogicState_ == LogicState::WAS_PRESSED){
+	else if(but4->LogicState_ == LogicState::WAS_PRESSED){
 		figure.MoveHorizontally(Directions::RIGHT);
-		but2->LogicState_ = LogicState::NONE;
+		but4->LogicState_ = LogicState::NONE;
 		return true;
 	}
-	else if(but3->LogicState_ == LogicState::WAS_PRESSED){
+	else if(but2->LogicState_ == LogicState::WAS_PRESSED){
 		figure.Rotate();
-		but3->LogicState_ = LogicState::NONE;
+		but2->LogicState_ = LogicState::NONE;
 		return true;
 	}
 	return false;
 }
 
-void PrintTetrisFigure(const block_t& block, const Coordinate& coord, size_t side, color_t color)
+void PrintTetrisFigure(const TetrisFigure& figure)
 {
-	size_t row = 0, col = 0;
-	std::for_each(block.begin(), block.end(), [&](auto& subblock)
-	{
-		if(subblock.isFeeled && (coord.Y + row >= HIDDEN_ROW_OF_FIELD))
-		{
-			tft_fillRoundRect((coord.X + col) * SIDE_SQUARE,
-					(coord.Y + row - HIDDEN_ROW_OF_FIELD) * SIDE_SQUARE,
-					SIDE_SQUARE, SIDE_SQUARE, SQUARE_RADIUS, color);
-		}
-		if (++col == side) { ++row, col = 0; }
-	});
+	int side = figure.side;
+	for(int row = 0; row < side; ++row)
+		for (int col = 0; col < side; ++col)
+			if (figure.figure[row * side + col].isFeeled && (figure.coord.Y + row) >= HIDDEN_ROW_OF_FIELD)
+			{
+				tft_fillRoundRect((figure.coord.X + col) * SIDE_SQUARE,
+						(figure.coord.Y + row - HIDDEN_ROW_OF_FIELD) * SIDE_SQUARE,
+						SIDE_SQUARE, SIDE_SQUARE, SQUARE_RADIUS, figure.figure[row * side + col].color);
+			}
 }
 
-void PrintTetrisFigure(const block_t& block, const Coordinate& coord, size_t side)
+void ErasePrevFigure(const TetrisFigure& figure)
 {
-	size_t row = 0, col = 0;
-	std::for_each(block.begin(), block.end(), [&](auto& subblock)
-	{
-		if(subblock.isFeeled && (coord.Y + row >= HIDDEN_ROW_OF_FIELD))
-		{
-			tft_fillRoundRect((coord.X + col) * SIDE_SQUARE,
-					(coord.Y + row - HIDDEN_ROW_OF_FIELD) * SIDE_SQUARE,
-					SIDE_SQUARE, SIDE_SQUARE, SQUARE_RADIUS, subblock.color);
-		}
-		if (++col == side) { ++row, col = 0; }
-	});
-}
-void PrintedField(TetrisManager& manager)
-{
-	for(auto i = 0; i < ROW_OF_FIELD; ++i)
-		for(auto j = 0; j < COL_OF_FIELD; ++j)
-			tft_fillRoundRect(j * SIDE_SQUARE, i * SIDE_SQUARE,
-			SIDE_SQUARE, SIDE_SQUARE, SQUARE_RADIUS, manager.field[i * j].color);
+	int side = figure.side;
+	for (int row = 0; row < side; ++row)
+		for (int col = 0; col < side; ++col)
+			if (figure.prevFigure[row * side + col].isFeeled && (figure.prevCoord.Y + row) >= HIDDEN_ROW_OF_FIELD)
+			{
+				tft_fillRoundRect((figure.prevCoord.X + col) * SIDE_SQUARE,
+						(figure.prevCoord.Y + row - HIDDEN_ROW_OF_FIELD) * SIDE_SQUARE,
+						SIDE_SQUARE, SIDE_SQUARE, SQUARE_RADIUS, BACKGROUND);
+			}
 }
 
+void PrintTetrisField(block_t& myBlock)
+{
+
+	for (int row = HIDDEN_ROW_OF_FIELD; row < ROW_OF_FIELD; ++row)
+		for (int col = 0; col < COL_OF_FIELD; ++col)
+		{
+			tft_fillRoundRect(col * SIDE_SQUARE, (row - HIDDEN_ROW_OF_FIELD) * SIDE_SQUARE,
+					SIDE_SQUARE, SIDE_SQUARE, SQUARE_RADIUS, myBlock[row * COL_OF_FIELD + col].color);
+		}
+
+}
 
 void TetrisTask()
 {
 	tft_fillScreen(BACKGROUND);
-	tft_setRotation(PORTRAIT_ORIENTATION);
-
+	//tft_setRotation(PORTRAIT_ORIENTATION);
+	//tft_fillScreen(FIG1COLOR);
 	TetrisManager manager;
 
 	uint32_t delay = TETRIS_HIGH_DELAY;
 	uint32_t time = HAL_GetTick();
 
-	while(manager.END_OF_GAME)
+	while(!manager.END_OF_GAME)
 	{
 		if(!manager.currentFigure->MoveDown())
 		{
 			if(manager.EraseFilledRow())
 			{
-				PrintedField(manager);
+				PrintTetrisField(manager.field);
 			}
 			manager.GenerateNewFigure();
 		}
 		else
 		{
-			PrintTetrisFigure(manager.currentFigure->prevFigure, manager.currentFigure->prevCoord, manager.currentFigure->side, BACKGROUND);
+			ErasePrevFigure(*manager.currentFigure);
 		}
-		PrintTetrisFigure(manager.currentFigure->figure, manager.currentFigure->coord, manager.currentFigure->side);
+		PrintTetrisFigure(*manager.currentFigure);
 		while(computeTimeDuration(time) < delay)
 		{
 			if(TetrisButtonHandler(*manager.currentFigure, delay))
 			{
-				PrintTetrisFigure(manager.currentFigure->prevFigure, manager.currentFigure->prevCoord, manager.currentFigure->side, BACKGROUND);
-				PrintTetrisFigure(manager.currentFigure->figure, manager.currentFigure->coord, manager.currentFigure->side);
+				ErasePrevFigure(*manager.currentFigure);
+				PrintTetrisFigure(*manager.currentFigure);
 			}
 		}
 		time = HAL_GetTick();

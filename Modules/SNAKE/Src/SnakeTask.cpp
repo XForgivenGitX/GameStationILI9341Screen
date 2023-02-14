@@ -67,6 +67,7 @@ void SnakeTask()
 		}
 		time = HAL_GetTick();
 	}
+	tft_print(int(SnakeObj.mySnake.size() - 1));
 	while(but1->LogicState_ != LogicState::WAS_HOLDED)computeTimeDuration(time);
 }
 

@@ -3,13 +3,10 @@
 TetrisManager::TetrisManager()
 {
 	field.resize(ROW_OF_FIELD * COL_OF_FIELD);
-	myFigure = CreateFigure(*this);
+	myFigure = CreateFigure(*this) ;
 	currentFigure = myFigure.begin() + generator.generate(0, QUANTITY_FIGURE - 1);
 }
-void TetrisManager::GenerateNewFigure()
-{
-	currentFigure = myFigure.begin() + generator.generate(0, QUANTITY_FIGURE - 1);
-}
+
 bool TetrisManager::EraseFilledRow()
 {
 	auto itBeg = field.begin();
@@ -32,18 +29,26 @@ bool TetrisManager::EraseFilledRow()
 	return returnStatus;
 }
 
-TetrisFigure::TetrisFigure(block_t&& figure_, Coordinate coordFigure_, size_t sideFigure_, color_t colorFigure, TetrisManager& manager_)
-	: figure(std::move(figure_)), initFigure(figure), coord(coordFigure_), prevCoord(coordFigure_), initCoord(coordFigure_), manager(manager_), side(sideFigure_)
+void TetrisManager::GenerateNewFigure()
 {
-	std::for_each(figure.begin(), figure.end(), [&](auto& part)
-		{if (part.isFeeled) part.color = colorFigure; });
+	currentFigure = myFigure.begin() + generator.generate(0, QUANTITY_FIGURE - 1);
+}
+TetrisFigure::TetrisFigure(block_t&& figure_, Coordinate coordFigure_, size_t sideFigure_, color_t colorFigure, TetrisManager& manager_)
+	: figure(std::move(figure_)), initFigure(figure), initCoord(coordFigure_),  prevCoord(coordFigure_),
+	  coord(coordFigure_), manager(manager_), side(sideFigure_)
+{
+	for(int i = 0; i < pow(side, 2); ++i)
+		if (figure[i].isFeeled)
+		{
+			figure[i].color = colorFigure;
+			initFigure[i].color = colorFigure;
+		}
 }
 
 void TetrisFigure::Rotate()
 {
 	prevFigure = figure;
 	prevCoord = coord;
-	auto tmpCoord = coord;
 	auto counter = 1;
 	size_t row = side - counter;
 	std::for_each(figure.begin(), figure.end(), [&](auto& block)
@@ -52,14 +57,13 @@ void TetrisFigure::Rotate()
 	if (isIntersectionBlocks())
 	{
 		figure = prevFigure;
-		coord = tmpCoord;
+		coord = prevCoord;
 	}
 }
 void TetrisFigure::MoveHorizontally(Directions direction)
 {
 	prevFigure = figure;
 	prevCoord = coord;
-	auto tmpCoord = coord;
 	switch (direction)
 	{
 	case Directions::LEFT: --coord.X; break;
@@ -67,16 +71,19 @@ void TetrisFigure::MoveHorizontally(Directions direction)
 	default: return;
 	}
 	CheckBoundaries();
-	if (isIntersectionBlocks()) coord = tmpCoord;
+	if (isIntersectionBlocks()) coord = prevCoord;
 }
 bool TetrisFigure::MoveDown()
 {
 	prevFigure = figure;
 	prevCoord = coord;
 	++coord.Y;
-	if (CheckBoundaries() || isIntersectionBlocks())
+	bool returnCB = CheckBoundaries();
+	bool returnIB = isIntersectionBlocks();
+	if (returnIB) --coord.Y;
+	if (returnIB || returnCB)
 	{
-		if(CheckEndGame()) return true;
+		if (CheckEndGame()) return true;
 		FillFieldFigure();
 		figure = initFigure;
 		coord = initCoord;
@@ -95,7 +102,7 @@ bool TetrisFigure::CheckBoundaries()
 			coord.Y -= 1; returnStatus = true;
 		}
 	}
-	else if (coord.X < 0)
+	if (coord.X < 0)
 	{
 		if (isContainsUnitInColumne(abs(coord.X) - 1))
 		{
@@ -165,19 +172,20 @@ void TetrisFigure::FillFieldFigure()
 	};
 	std::for_each(figure.begin(), figure.end(), lambd4);
 }
+
 bool TetrisFigure::CheckEndGame()
 {
-	if((coord.Y < HIDDEN_ROW_OF_FIELD) && ((coord.Y + (side - 1) >= HIDDEN_ROW_OF_FIELD)))//?
+	if (coord.Y < HIDDEN_ROW_OF_FIELD)
 	{
-		if(isContainsUnitInRow((HIDDEN_ROW_OF_FIELD - 1) - coord.Y))
+		if (isContainsUnitInRow((HIDDEN_ROW_OF_FIELD - 1) - coord.Y))
 		{
-			manager.END_OF_GAME = false;
+			manager.END_OF_GAME = true;
 			return true;
 		}
 	}
 	return false;
 }
-std::vector<TetrisFigure>&& CreateFigure(TetrisManager& man)
+std::vector<TetrisFigure> CreateFigure(TetrisManager& man)
 {
 	block_t fig1
 	{
@@ -223,12 +231,12 @@ std::vector<TetrisFigure>&& CreateFigure(TetrisManager& man)
 	};
 	std::vector<TetrisFigure> myFigure;
 	myFigure.reserve(QUANTITY_FIGURE);
-	myFigure.emplace_back(std::move(fig1), Coordinate{ 6, 0 }, 4, FIG1COLOR, man);
-	myFigure.emplace_back(std::move(fig2), Coordinate{ 6, 1 }, 3, FIG2COLOR, man);
-	myFigure.emplace_back(std::move(fig3), Coordinate{ 6, 1 }, 3, FIG3COLOR, man);
-	myFigure.emplace_back(std::move(fig4), Coordinate{ 6, 1 }, 3, FIG4COLOR, man);
-	myFigure.emplace_back(std::move(fig5), Coordinate{ 6, 1 }, 3, FIG5COLOR, man);
-	myFigure.emplace_back(std::move(fig6), Coordinate{ 6, 1 }, 3, FIG6COLOR, man);
-	myFigure.emplace_back(std::move(fig7), Coordinate{ 6, 2 }, 2, FIG7COLOR, man);
-	return std::move(myFigure);
+	myFigure.emplace_back(std::move(fig1), Coordinate{ 3, 1 }, 4, FIG1COLOR, man);
+	myFigure.emplace_back(std::move(fig2), Coordinate{ 3, 2 }, 3, FIG2COLOR, man);
+	myFigure.emplace_back(std::move(fig3), Coordinate{ 3, 2 }, 3, FIG3COLOR, man);
+	myFigure.emplace_back(std::move(fig4), Coordinate{ 3, 2 }, 3, FIG4COLOR, man);
+	myFigure.emplace_back(std::move(fig5), Coordinate{ 3, 2 }, 3, FIG5COLOR, man);
+	myFigure.emplace_back(std::move(fig6), Coordinate{ 3, 2 }, 3, FIG6COLOR, man);
+	myFigure.emplace_back(std::move(fig7), Coordinate{ 3, 3 }, 2, FIG7COLOR, man);
+	return myFigure;
 }

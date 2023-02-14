@@ -20,13 +20,8 @@ struct Coordinate
 
 struct random_generator
 {
-	int32_t generate(int32_t max, int32_t min)
-	{
-		std::uniform_int_distribution<int32_t> distance{ max , min };
-		return distance(generator);
-	}
-private:
-	std::default_random_engine generator{};
+	int32_t generate(int32_t max, int32_t min);
+	static std::default_random_engine generator;
 };
 
 uint32_t computeTimeDuration(uint32_t time);
