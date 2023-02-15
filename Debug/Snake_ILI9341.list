@@ -19946,7 +19946,7 @@ void TetrisTask()
 	uint32_t delay = TETRIS_HIGH_DELAY;
  800b1ec:	f44f 73fa 	mov.w	r3, #500	; 0x1f4
  800b1f0:	9300      	str	r3, [sp, #0]
-	uint32_t time = HAL_GetTick();  //ddddd
+	uint32_t time = HAL_GetTick();  //dddd
  800b1f2:	f7fc ff07 	bl	8008004 <HAL_GetTick>
  800b1f6:	4604      	mov	r4, r0
 
