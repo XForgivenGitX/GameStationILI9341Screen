@@ -86,7 +86,7 @@ void TetrisTask()
 	TetrisManager manager;
 
 	uint32_t delay = TETRIS_HIGH_DELAY;
-	uint32_t time = HAL_GetTick();
+	uint32_t time = HAL_GetTick();  //ddddd
 
 	while(!manager.END_OF_GAME)
 	{

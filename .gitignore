@@ -33,3 +33,5 @@ Debug
 *.exe
 *.out
 *.app
+Debug/Snake_ILI9341.list
+*.list
