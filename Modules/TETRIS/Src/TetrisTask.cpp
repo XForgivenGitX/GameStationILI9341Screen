@@ -113,5 +113,5 @@ void TetrisTask()
 		}
 		time = HAL_GetTick();
 	}
-	while(but1->LogicState_ != LogicState::WAS_HOLDED)computeTimeDuration(time);
+	while(but1->LogicState_ != LogicState::WAS_HOLDED);
 }
