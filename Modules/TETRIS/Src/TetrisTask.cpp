@@ -139,14 +139,13 @@ void TetrisTask()
 
 void PrintTetrisInterface()
 {
-	tft_setTextSize(1);
-	tft_setTextColor(ILI9341_BLUE, ILI9341_GREEN);
-
 	tft_fillScreen(BACKGROUND);
 	tft_fillRoundRect(150, 0, 170, 240, 3, ILI9341_BLUE);
 	tft_fillRoundRect(160, 10, 150, 125, 3, ILI9341_GREEN);
 	tft_fillRoundRect(160, 140, 150, 90, 3, ILI9341_GREEN);
 
+	tft_setTextSize(1);
+	tft_setTextColor(ILI9341_BLACK, ILI9341_GREEN);
 	tft_setCursor(230, 20);
 	tft_print(const_cast<char*>("COPYRIGHT BY:"));
 	tft_setCursor(230, 30);
@@ -163,8 +162,9 @@ void PrintTetrisInterface()
 	tft_print(const_cast<char*>("LICENSE: MIT"));
 
 	tft_setTextSize(2);
+	tft_setTextColor(ILI9341_BLUE, ILI9341_GREEN);
 	tft_setCursor(165, 100);
-	tft_print(const_cast<char*>("POINTS:"));
+	tft_print(const_cast<char*>("PTS:"));
 	tft_setCursor(165, 115);
 	tft_print(const_cast<char*>("ROWS:"));
 
