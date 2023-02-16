@@ -23,14 +23,14 @@ using block_t = std::vector<PartTetrisBlock>;
 
 enum Colors
 {
-	BACKGROUND = ILI9341_NAVY,
-	FIG1COLOR = ILI9341_CYAN,
-	FIG2COLOR = ILI9341_GREEN,
-	FIG3COLOR = ILI9341_OLIVE,
+	BACKGROUND = ILI9341_BLACK,
+	FIG1COLOR = ILI9341_YELLOW,
+	FIG2COLOR = ILI9341_PINK,
+	FIG3COLOR = ILI9341_ORANGE,
 	FIG4COLOR = ILI9341_RED,
-	FIG5COLOR = ILI9341_PINK,
-	FIG6COLOR = ILI9341_WHITE,
-	FIG7COLOR = ILI9341_YELLOW
+	FIG5COLOR = ILI9341_GREEN,
+	FIG6COLOR = ILI9341_PURPLE,
+	FIG7COLOR = ILI9341_CYAN
 };
 enum class Directions{LEFT, RIGHT};
 
@@ -44,11 +44,13 @@ struct PartTetrisBlock
 struct TetrisManager
 {
 	std::vector<TetrisFigure>::iterator currentFigure;
+	std::vector<TetrisFigure>::iterator nextFigure;
+
 	block_t field{};
 	bool END_OF_GAME = false;
 
 	TetrisManager();
-	bool EraseFilledRow();
+	size_t EraseFilledRow();
 	void GenerateNewFigure();
 
 private:

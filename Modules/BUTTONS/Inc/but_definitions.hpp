@@ -1,5 +1,5 @@
 #pragma once
-#include <BUTTONS/Inc/but_main.hpp>
+#include <Inc/but_main.hpp>
 namespace but{
 
 typedef uint16_t Definition;

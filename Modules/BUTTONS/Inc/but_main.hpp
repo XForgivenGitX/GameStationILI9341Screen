@@ -5,6 +5,6 @@
 
 #include <list>
 #include <algorithm>
-#include <BUTTONS/Inc/but_definitions.hpp>
-#include <BUTTONS/Inc/but_detail.hpp>
+#include <Inc/but_definitions.hpp>
+#include <Inc/but_detail.hpp>
 

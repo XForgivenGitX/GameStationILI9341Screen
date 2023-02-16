@@ -1,5 +1,6 @@
 #pragma once
 #include "stm32f1xx_hal.h"
+#include <main.hpp>
 #include <Inc/SnakeTask.hpp>
 #include <Inc/TetrisTask.hpp>
 #include <Inc/but_main.hpp>

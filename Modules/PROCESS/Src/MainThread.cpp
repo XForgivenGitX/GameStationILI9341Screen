@@ -8,7 +8,6 @@ but::ButtonWrapper *but4 = but::ButtonControlBlock::CreateButton(DB7_GPIO_Port, 
 void MainInit()
 {
 	tft_begin();
-	tft_setTextSize(15);
 	tft_setRotation(true);
 }
 

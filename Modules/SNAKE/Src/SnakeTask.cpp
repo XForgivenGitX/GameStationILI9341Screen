@@ -40,7 +40,7 @@ void SnakeTask()
 	directions tmpDir;
 	uint32_t currentDelay = INIT_SPEED_GAME;
 
-	//SnakeInterface();
+	tft_setTextSize(15);
 	tft_fillScreen(ILI9341_BLUE);
 
 	printSnakeSquare(SnakeObj.fruitCoordinate);

@@ -4,14 +4,15 @@ TetrisManager::TetrisManager()
 {
 	field.resize(ROW_OF_FIELD * COL_OF_FIELD);
 	myFigure = CreateFigure(*this) ;
-	currentFigure = myFigure.begin() + generator.generate(0, QUANTITY_FIGURE - 1);
+	nextFigure = myFigure.begin() + generator.generate(0, QUANTITY_FIGURE - 1);
+	GenerateNewFigure();
 }
 
-bool TetrisManager::EraseFilledRow()
+size_t TetrisManager::EraseFilledRow()
 {
 	auto itBeg = field.begin();
 	auto itEnd = itBeg;
-	bool returnStatus = false;
+	size_t ErasedRows = 0;
 	size_t row = 0;
 	for (; itBeg != field.end(); itBeg += COL_OF_FIELD, ++row)
 	{
@@ -23,15 +24,16 @@ bool TetrisManager::EraseFilledRow()
 			field.insert(field.begin(), COL_OF_FIELD, {});
 			itBeg = field.begin() + (COL_OF_FIELD * row);
 			itEnd = itBeg + COL_OF_FIELD;
-			returnStatus = true;
+			++ErasedRows;
 		}
 	}
-	return returnStatus;
+	return ErasedRows;
 }
 
 void TetrisManager::GenerateNewFigure()
 {
-	currentFigure = myFigure.begin() + generator.generate(0, QUANTITY_FIGURE - 1);
+	currentFigure = nextFigure;
+	nextFigure = myFigure.begin() + generator.generate(0, QUANTITY_FIGURE - 1);
 }
 TetrisFigure::TetrisFigure(block_t&& figure_, Coordinate coordFigure_, size_t sideFigure_, color_t colorFigure, TetrisManager& manager_)
 	: figure(std::move(figure_)), initFigure(figure), initCoord(coordFigure_),  prevCoord(coordFigure_),
