@@ -1,7 +1,6 @@
 #pragma once
 #include <Inc/TetrisLogic.hpp>
 #include <Inc/MainThread.hpp>
-
 //#define DEBUG_TETRIS
 
 constexpr uint32_t TETRIS_HIGH_DELAY 	= 500;

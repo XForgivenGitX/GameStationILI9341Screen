@@ -150,7 +150,9 @@ void PrintTetrisInterface()
 	tft_setCursor(230, 20);
 	tft_print(const_cast<char*>("COPYRIGHT BY:"));
 	tft_setCursor(230, 30);
-	tft_print(const_cast<char*>("KUBAREV ILYA"));
+	tft_print(const_cast<char*>("KUBAREV I.A."));
+	tft_setCursor(230, 40);
+	tft_print(const_cast<char*>("KIRIN A.K."));
 	tft_setCursor(230, 50);
 	tft_print(const_cast<char*>("ORGANISATION:"));
 	tft_setCursor(230, 60);
