@@ -191,39 +191,39 @@ std::vector<TetrisFigure> CreateFigure(TetrisManager& man)
 {
 	block_t fig1
 	{
-		{0},{0},{1},{0},
-		{0},{0},{1},{0},
-		{0},{0},{1},{0},
-		{0},{0},{1},{0}
+		{0},{0},{0},{0},
+		{0},{0},{0},{0},
+		{1},{1},{1},{1},
+		{0},{0},{0},{0}
 	};
 	block_t fig2
 	{
-		{1},{1},{0},
-		{0},{1},{0},
-		{0},{1},{0}
+		{0},{0},{0},
+		{1},{1},{1},
+		{1},{0},{0}
 	};
 	block_t fig3
 	{
-		{0},{1},{0},
-		{0},{1},{0},
-		{0},{1},{1}
+		{0},{0},{0},
+		{1},{1},{1},
+		{0},{0},{1}
 	};
 	block_t fig4
 	{
-		{0},{1},{0},
+		{0},{0},{0},
 		{0},{1},{1},
-		{0},{0},{1}
+		{1},{1},{0}
 	};
 	block_t fig5
 	{
-		{0},{1},{0},
+		{0},{0},{0},
 		{1},{1},{0},
-		{1},{0},{0}
+		{0},{1},{1}
 	};
 	block_t fig6
 	{
-		{0},{1},{0},
-		{1},{1},{0},
+		{0},{0},{0},
+		{1},{1},{1},
 		{0},{1},{0}
 	};
 	block_t fig7
@@ -233,7 +233,7 @@ std::vector<TetrisFigure> CreateFigure(TetrisManager& man)
 	};
 	std::vector<TetrisFigure> myFigure;
 	myFigure.reserve(QUANTITY_FIGURE);
-	myFigure.emplace_back(std::move(fig1), Coordinate{ 3, 1 }, 4, FIG1COLOR, man);
+	myFigure.emplace_back(std::move(fig1), Coordinate{ 3, 2 }, 4, FIG1COLOR, man);
 	myFigure.emplace_back(std::move(fig2), Coordinate{ 3, 2 }, 3, FIG2COLOR, man);
 	myFigure.emplace_back(std::move(fig3), Coordinate{ 3, 2 }, 3, FIG3COLOR, man);
 	myFigure.emplace_back(std::move(fig4), Coordinate{ 3, 2 }, 3, FIG4COLOR, man);

@@ -12896,12 +12896,13 @@ LOAD c:/st/stm32cubeide_1.8.0/stm32cubeide/plugins/com.st.stm32cube.ide.mcu.exte
                 0x000000000800a920       0x56 ./Modules/TETRIS/Src/TetrisLogic.o
                 0x000000000800a920                void std::vector<TetrisFigure, std::allocator<TetrisFigure> >::emplace_back<std::vector<PartTetrisBlock, std::allocator<PartTetrisBlock> >, Coordinate, int, Colors, TetrisManager&>(std::vector<PartTetrisBlock, std::allocator<PartTetrisBlock> >&&, Coordinate&&, int&&, Colors&&, TetrisManager&)
  .text._Z12CreateFigureR13TetrisManager
-                0x000000000800a976      0x572 ./Modules/TETRIS/Src/TetrisLogic.o
+                0x000000000800a976      0x570 ./Modules/TETRIS/Src/TetrisLogic.o
                 0x000000000800a976                CreateFigure(TetrisManager&)
  .text._ZN13TetrisManagerC2Ev
-                0x000000000800aee8       0xf0 ./Modules/TETRIS/Src/TetrisLogic.o
-                0x000000000800aee8                TetrisManager::TetrisManager()
-                0x000000000800aee8                TetrisManager::TetrisManager()
+                0x000000000800aee6       0xf0 ./Modules/TETRIS/Src/TetrisLogic.o
+                0x000000000800aee6                TetrisManager::TetrisManager()
+                0x000000000800aee6                TetrisManager::TetrisManager()
+ *fill*         0x000000000800afd6        0x2 
  .text._Z19TetrisButtonHandlerR12TetrisFigureRm
                 0x000000000800afd8       0x84 ./Modules/TETRIS/Src/TetrisTask.o
                 0x000000000800afd8                TetrisButtonHandler(TetrisFigure&, unsigned long&)

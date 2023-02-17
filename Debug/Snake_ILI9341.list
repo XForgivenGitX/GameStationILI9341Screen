@@ -18875,32 +18875,32 @@ std::vector<TetrisFigure> CreateFigure(TetrisManager& man)
  800a986:	9306      	str	r3, [sp, #24]
  800a988:	f88d 301c 	strb.w	r3, [sp, #28]
  800a98c:	9308      	str	r3, [sp, #32]
- 800a98e:	2201      	movs	r2, #1
- 800a990:	f88d 2024 	strb.w	r2, [sp, #36]	; 0x24
- 800a994:	930a      	str	r3, [sp, #40]	; 0x28
- 800a996:	f88d 302c 	strb.w	r3, [sp, #44]	; 0x2c
- 800a99a:	930c      	str	r3, [sp, #48]	; 0x30
- 800a99c:	f88d 3034 	strb.w	r3, [sp, #52]	; 0x34
- 800a9a0:	930e      	str	r3, [sp, #56]	; 0x38
- 800a9a2:	f88d 303c 	strb.w	r3, [sp, #60]	; 0x3c
- 800a9a6:	9310      	str	r3, [sp, #64]	; 0x40
- 800a9a8:	f88d 2044 	strb.w	r2, [sp, #68]	; 0x44
- 800a9ac:	9312      	str	r3, [sp, #72]	; 0x48
- 800a9ae:	f88d 304c 	strb.w	r3, [sp, #76]	; 0x4c
- 800a9b2:	9314      	str	r3, [sp, #80]	; 0x50
- 800a9b4:	f88d 3054 	strb.w	r3, [sp, #84]	; 0x54
+ 800a98e:	f88d 3024 	strb.w	r3, [sp, #36]	; 0x24
+ 800a992:	930a      	str	r3, [sp, #40]	; 0x28
+ 800a994:	f88d 302c 	strb.w	r3, [sp, #44]	; 0x2c
+ 800a998:	930c      	str	r3, [sp, #48]	; 0x30
+ 800a99a:	f88d 3034 	strb.w	r3, [sp, #52]	; 0x34
+ 800a99e:	930e      	str	r3, [sp, #56]	; 0x38
+ 800a9a0:	f88d 303c 	strb.w	r3, [sp, #60]	; 0x3c
+ 800a9a4:	9310      	str	r3, [sp, #64]	; 0x40
+ 800a9a6:	f88d 3044 	strb.w	r3, [sp, #68]	; 0x44
+ 800a9aa:	9312      	str	r3, [sp, #72]	; 0x48
+ 800a9ac:	f88d 304c 	strb.w	r3, [sp, #76]	; 0x4c
+ 800a9b0:	9314      	str	r3, [sp, #80]	; 0x50
+ 800a9b2:	2201      	movs	r2, #1
+ 800a9b4:	f88d 2054 	strb.w	r2, [sp, #84]	; 0x54
  800a9b8:	9316      	str	r3, [sp, #88]	; 0x58
- 800a9ba:	f88d 305c 	strb.w	r3, [sp, #92]	; 0x5c
+ 800a9ba:	f88d 205c 	strb.w	r2, [sp, #92]	; 0x5c
  800a9be:	9318      	str	r3, [sp, #96]	; 0x60
  800a9c0:	f88d 2064 	strb.w	r2, [sp, #100]	; 0x64
  800a9c4:	931a      	str	r3, [sp, #104]	; 0x68
- 800a9c6:	f88d 306c 	strb.w	r3, [sp, #108]	; 0x6c
+ 800a9c6:	f88d 206c 	strb.w	r2, [sp, #108]	; 0x6c
  800a9ca:	931c      	str	r3, [sp, #112]	; 0x70
  800a9cc:	f88d 3074 	strb.w	r3, [sp, #116]	; 0x74
  800a9d0:	931e      	str	r3, [sp, #120]	; 0x78
  800a9d2:	f88d 307c 	strb.w	r3, [sp, #124]	; 0x7c
  800a9d6:	9320      	str	r3, [sp, #128]	; 0x80
- 800a9d8:	f88d 2084 	strb.w	r2, [sp, #132]	; 0x84
+ 800a9d8:	f88d 3084 	strb.w	r3, [sp, #132]	; 0x84
  800a9dc:	9322      	str	r3, [sp, #136]	; 0x88
  800a9de:	f88d 308c 	strb.w	r3, [sp, #140]	; 0x8c
  800a9e2:	9324      	str	r3, [sp, #144]	; 0x90
@@ -18928,23 +18928,23 @@ std::vector<TetrisFigure> CreateFigure(TetrisManager& man)
  800aa0e:	d1f7      	bne.n	800aa00 <_Z12CreateFigureR13TetrisManager+0x8a>
 	  this->_M_impl._M_finish =
  800aa10:	9538      	str	r5, [sp, #224]	; 0xe0
- 800aa12:	2201      	movs	r2, #1
- 800aa14:	f88d 2014 	strb.w	r2, [sp, #20]
- 800aa18:	2300      	movs	r3, #0
- 800aa1a:	9306      	str	r3, [sp, #24]
- 800aa1c:	f88d 201c 	strb.w	r2, [sp, #28]
- 800aa20:	9308      	str	r3, [sp, #32]
- 800aa22:	f88d 3024 	strb.w	r3, [sp, #36]	; 0x24
- 800aa26:	930a      	str	r3, [sp, #40]	; 0x28
- 800aa28:	f88d 302c 	strb.w	r3, [sp, #44]	; 0x2c
+ 800aa12:	2300      	movs	r3, #0
+ 800aa14:	f88d 3014 	strb.w	r3, [sp, #20]
+ 800aa18:	9306      	str	r3, [sp, #24]
+ 800aa1a:	f88d 301c 	strb.w	r3, [sp, #28]
+ 800aa1e:	9308      	str	r3, [sp, #32]
+ 800aa20:	f88d 3024 	strb.w	r3, [sp, #36]	; 0x24
+ 800aa24:	930a      	str	r3, [sp, #40]	; 0x28
+ 800aa26:	2201      	movs	r2, #1
+ 800aa28:	f88d 202c 	strb.w	r2, [sp, #44]	; 0x2c
  800aa2c:	930c      	str	r3, [sp, #48]	; 0x30
  800aa2e:	f88d 2034 	strb.w	r2, [sp, #52]	; 0x34
  800aa32:	930e      	str	r3, [sp, #56]	; 0x38
- 800aa34:	f88d 303c 	strb.w	r3, [sp, #60]	; 0x3c
+ 800aa34:	f88d 203c 	strb.w	r2, [sp, #60]	; 0x3c
  800aa38:	9310      	str	r3, [sp, #64]	; 0x40
- 800aa3a:	f88d 3044 	strb.w	r3, [sp, #68]	; 0x44
+ 800aa3a:	f88d 2044 	strb.w	r2, [sp, #68]	; 0x44
  800aa3e:	9312      	str	r3, [sp, #72]	; 0x48
- 800aa40:	f88d 204c 	strb.w	r2, [sp, #76]	; 0x4c
+ 800aa40:	f88d 304c 	strb.w	r3, [sp, #76]	; 0x4c
  800aa44:	9314      	str	r3, [sp, #80]	; 0x50
  800aa46:	f88d 3054 	strb.w	r3, [sp, #84]	; 0x54
  800aa4a:	9316      	str	r3, [sp, #88]	; 0x58
@@ -18973,20 +18973,20 @@ std::vector<TetrisFigure> CreateFigure(TetrisManager& man)
  800aa7c:	2300      	movs	r3, #0
  800aa7e:	f88d 3014 	strb.w	r3, [sp, #20]
  800aa82:	9306      	str	r3, [sp, #24]
- 800aa84:	2201      	movs	r2, #1
- 800aa86:	f88d 201c 	strb.w	r2, [sp, #28]
- 800aa8a:	9308      	str	r3, [sp, #32]
- 800aa8c:	f88d 3024 	strb.w	r3, [sp, #36]	; 0x24
- 800aa90:	930a      	str	r3, [sp, #40]	; 0x28
- 800aa92:	f88d 302c 	strb.w	r3, [sp, #44]	; 0x2c
+ 800aa84:	f88d 301c 	strb.w	r3, [sp, #28]
+ 800aa88:	9308      	str	r3, [sp, #32]
+ 800aa8a:	f88d 3024 	strb.w	r3, [sp, #36]	; 0x24
+ 800aa8e:	930a      	str	r3, [sp, #40]	; 0x28
+ 800aa90:	2201      	movs	r2, #1
+ 800aa92:	f88d 202c 	strb.w	r2, [sp, #44]	; 0x2c
  800aa96:	930c      	str	r3, [sp, #48]	; 0x30
  800aa98:	f88d 2034 	strb.w	r2, [sp, #52]	; 0x34
  800aa9c:	930e      	str	r3, [sp, #56]	; 0x38
- 800aa9e:	f88d 303c 	strb.w	r3, [sp, #60]	; 0x3c
+ 800aa9e:	f88d 203c 	strb.w	r2, [sp, #60]	; 0x3c
  800aaa2:	9310      	str	r3, [sp, #64]	; 0x40
  800aaa4:	f88d 3044 	strb.w	r3, [sp, #68]	; 0x44
  800aaa8:	9312      	str	r3, [sp, #72]	; 0x48
- 800aaaa:	f88d 204c 	strb.w	r2, [sp, #76]	; 0x4c
+ 800aaaa:	f88d 304c 	strb.w	r3, [sp, #76]	; 0x4c
  800aaae:	9314      	str	r3, [sp, #80]	; 0x50
  800aab0:	f88d 2054 	strb.w	r2, [sp, #84]	; 0x54
  800aab4:	9316      	str	r3, [sp, #88]	; 0x58
@@ -19015,22 +19015,22 @@ std::vector<TetrisFigure> CreateFigure(TetrisManager& man)
  800aae6:	2300      	movs	r3, #0
  800aae8:	f88d 3014 	strb.w	r3, [sp, #20]
  800aaec:	9306      	str	r3, [sp, #24]
- 800aaee:	2201      	movs	r2, #1
- 800aaf0:	f88d 201c 	strb.w	r2, [sp, #28]
- 800aaf4:	9308      	str	r3, [sp, #32]
- 800aaf6:	f88d 3024 	strb.w	r3, [sp, #36]	; 0x24
- 800aafa:	930a      	str	r3, [sp, #40]	; 0x28
- 800aafc:	f88d 302c 	strb.w	r3, [sp, #44]	; 0x2c
- 800ab00:	930c      	str	r3, [sp, #48]	; 0x30
+ 800aaee:	f88d 301c 	strb.w	r3, [sp, #28]
+ 800aaf2:	9308      	str	r3, [sp, #32]
+ 800aaf4:	f88d 3024 	strb.w	r3, [sp, #36]	; 0x24
+ 800aaf8:	930a      	str	r3, [sp, #40]	; 0x28
+ 800aafa:	f88d 302c 	strb.w	r3, [sp, #44]	; 0x2c
+ 800aafe:	930c      	str	r3, [sp, #48]	; 0x30
+ 800ab00:	2201      	movs	r2, #1
  800ab02:	f88d 2034 	strb.w	r2, [sp, #52]	; 0x34
  800ab06:	930e      	str	r3, [sp, #56]	; 0x38
  800ab08:	f88d 203c 	strb.w	r2, [sp, #60]	; 0x3c
  800ab0c:	9310      	str	r3, [sp, #64]	; 0x40
- 800ab0e:	f88d 3044 	strb.w	r3, [sp, #68]	; 0x44
+ 800ab0e:	f88d 2044 	strb.w	r2, [sp, #68]	; 0x44
  800ab12:	9312      	str	r3, [sp, #72]	; 0x48
- 800ab14:	f88d 304c 	strb.w	r3, [sp, #76]	; 0x4c
+ 800ab14:	f88d 204c 	strb.w	r2, [sp, #76]	; 0x4c
  800ab18:	9314      	str	r3, [sp, #80]	; 0x50
- 800ab1a:	f88d 2054 	strb.w	r2, [sp, #84]	; 0x54
+ 800ab1a:	f88d 3054 	strb.w	r3, [sp, #84]	; 0x54
  800ab1e:	9316      	str	r3, [sp, #88]	; 0x58
 	: _M_start(), _M_finish(), _M_end_of_storage()
  800ab20:	932e      	str	r3, [sp, #184]	; 0xb8
@@ -19057,22 +19057,22 @@ std::vector<TetrisFigure> CreateFigure(TetrisManager& man)
  800ab50:	2300      	movs	r3, #0
  800ab52:	f88d 3014 	strb.w	r3, [sp, #20]
  800ab56:	9306      	str	r3, [sp, #24]
- 800ab58:	2201      	movs	r2, #1
- 800ab5a:	f88d 201c 	strb.w	r2, [sp, #28]
- 800ab5e:	9308      	str	r3, [sp, #32]
- 800ab60:	f88d 3024 	strb.w	r3, [sp, #36]	; 0x24
- 800ab64:	930a      	str	r3, [sp, #40]	; 0x28
+ 800ab58:	f88d 301c 	strb.w	r3, [sp, #28]
+ 800ab5c:	9308      	str	r3, [sp, #32]
+ 800ab5e:	f88d 3024 	strb.w	r3, [sp, #36]	; 0x24
+ 800ab62:	930a      	str	r3, [sp, #40]	; 0x28
+ 800ab64:	2201      	movs	r2, #1
  800ab66:	f88d 202c 	strb.w	r2, [sp, #44]	; 0x2c
  800ab6a:	930c      	str	r3, [sp, #48]	; 0x30
  800ab6c:	f88d 2034 	strb.w	r2, [sp, #52]	; 0x34
  800ab70:	930e      	str	r3, [sp, #56]	; 0x38
  800ab72:	f88d 303c 	strb.w	r3, [sp, #60]	; 0x3c
  800ab76:	9310      	str	r3, [sp, #64]	; 0x40
- 800ab78:	f88d 2044 	strb.w	r2, [sp, #68]	; 0x44
+ 800ab78:	f88d 3044 	strb.w	r3, [sp, #68]	; 0x44
  800ab7c:	9312      	str	r3, [sp, #72]	; 0x48
- 800ab7e:	f88d 304c 	strb.w	r3, [sp, #76]	; 0x4c
+ 800ab7e:	f88d 204c 	strb.w	r2, [sp, #76]	; 0x4c
  800ab82:	9314      	str	r3, [sp, #80]	; 0x50
- 800ab84:	f88d 3054 	strb.w	r3, [sp, #84]	; 0x54
+ 800ab84:	f88d 2054 	strb.w	r2, [sp, #84]	; 0x54
  800ab88:	9316      	str	r3, [sp, #88]	; 0x58
 	: _M_start(), _M_finish(), _M_end_of_storage()
  800ab8a:	932b      	str	r3, [sp, #172]	; 0xac
@@ -19099,16 +19099,16 @@ std::vector<TetrisFigure> CreateFigure(TetrisManager& man)
  800abba:	2300      	movs	r3, #0
  800abbc:	f88d 3014 	strb.w	r3, [sp, #20]
  800abc0:	9306      	str	r3, [sp, #24]
- 800abc2:	2201      	movs	r2, #1
- 800abc4:	f88d 201c 	strb.w	r2, [sp, #28]
- 800abc8:	9308      	str	r3, [sp, #32]
- 800abca:	f88d 3024 	strb.w	r3, [sp, #36]	; 0x24
- 800abce:	930a      	str	r3, [sp, #40]	; 0x28
+ 800abc2:	f88d 301c 	strb.w	r3, [sp, #28]
+ 800abc6:	9308      	str	r3, [sp, #32]
+ 800abc8:	f88d 3024 	strb.w	r3, [sp, #36]	; 0x24
+ 800abcc:	930a      	str	r3, [sp, #40]	; 0x28
+ 800abce:	2201      	movs	r2, #1
  800abd0:	f88d 202c 	strb.w	r2, [sp, #44]	; 0x2c
  800abd4:	930c      	str	r3, [sp, #48]	; 0x30
  800abd6:	f88d 2034 	strb.w	r2, [sp, #52]	; 0x34
  800abda:	930e      	str	r3, [sp, #56]	; 0x38
- 800abdc:	f88d 303c 	strb.w	r3, [sp, #60]	; 0x3c
+ 800abdc:	f88d 203c 	strb.w	r2, [sp, #60]	; 0x3c
  800abe0:	9310      	str	r3, [sp, #64]	; 0x40
  800abe2:	f88d 3044 	strb.w	r3, [sp, #68]	; 0x44
  800abe6:	9312      	str	r3, [sp, #72]	; 0x48
@@ -19307,14 +19307,14 @@ struct Coordinate
 	Coordinate(int32_t X_, int32_t Y_) : X(X_), Y(Y_) {}
  800ad88:	2403      	movs	r4, #3
  800ad8a:	943a      	str	r4, [sp, #232]	; 0xe8
- 800ad8c:	2301      	movs	r3, #1
- 800ad8e:	933b      	str	r3, [sp, #236]	; 0xec
+ 800ad8c:	2502      	movs	r5, #2
+ 800ad8e:	953b      	str	r5, [sp, #236]	; 0xec
 		{1},{1},
 		{1},{1}
 	};
 	std::vector<TetrisFigure> myFigure;
 	myFigure.reserve(QUANTITY_FIGURE);
-	myFigure.emplace_back(std::move(fig1), Coordinate{ 3, 1 }, 4, FIG1COLOR, man);
+	myFigure.emplace_back(std::move(fig1), Coordinate{ 3, 2 }, 4, FIG1COLOR, man);
  800ad90:	2304      	movs	r3, #4
  800ad92:	933c      	str	r3, [sp, #240]	; 0xf0
  800ad94:	f64f 73e0 	movw	r3, #65504	; 0xffe0
@@ -19328,294 +19328,294 @@ struct Coordinate
  800adac:	4638      	mov	r0, r7
  800adae:	f7ff fdb7 	bl	800a920 <_ZNSt6vectorI12TetrisFigureSaIS0_EE12emplace_backIJS_I15PartTetrisBlockSaIS4_EE10Coordinatei6ColorsR13TetrisManagerEEEvDpOT_>
  800adb2:	943e      	str	r4, [sp, #248]	; 0xf8
- 800adb4:	2502      	movs	r5, #2
- 800adb6:	953f      	str	r5, [sp, #252]	; 0xfc
+ 800adb4:	953f      	str	r5, [sp, #252]	; 0xfc
 	myFigure.emplace_back(std::move(fig2), Coordinate{ 3, 2 }, 3, FIG2COLOR, man);
- 800adb8:	9440      	str	r4, [sp, #256]	; 0x100
- 800adba:	f64f 031f 	movw	r3, #63519	; 0xf81f
- 800adbe:	f8ad 3106 	strh.w	r3, [sp, #262]	; 0x106
- 800adc2:	f8cd a004 	str.w	sl, [sp, #4]
- 800adc6:	f50d 7383 	add.w	r3, sp, #262	; 0x106
- 800adca:	9300      	str	r3, [sp, #0]
- 800adcc:	ab40      	add	r3, sp, #256	; 0x100
- 800adce:	aa3e      	add	r2, sp, #248	; 0xf8
- 800add0:	a934      	add	r1, sp, #208	; 0xd0
- 800add2:	4638      	mov	r0, r7
- 800add4:	f7ff fda4 	bl	800a920 <_ZNSt6vectorI12TetrisFigureSaIS0_EE12emplace_backIJS_I15PartTetrisBlockSaIS4_EE10Coordinatei6ColorsR13TetrisManagerEEEvDpOT_>
- 800add8:	9442      	str	r4, [sp, #264]	; 0x108
- 800adda:	9543      	str	r5, [sp, #268]	; 0x10c
+ 800adb6:	9440      	str	r4, [sp, #256]	; 0x100
+ 800adb8:	f64f 031f 	movw	r3, #63519	; 0xf81f
+ 800adbc:	f8ad 3106 	strh.w	r3, [sp, #262]	; 0x106
+ 800adc0:	f8cd a004 	str.w	sl, [sp, #4]
+ 800adc4:	f50d 7383 	add.w	r3, sp, #262	; 0x106
+ 800adc8:	9300      	str	r3, [sp, #0]
+ 800adca:	ab40      	add	r3, sp, #256	; 0x100
+ 800adcc:	aa3e      	add	r2, sp, #248	; 0xf8
+ 800adce:	a934      	add	r1, sp, #208	; 0xd0
+ 800add0:	4638      	mov	r0, r7
+ 800add2:	f7ff fda5 	bl	800a920 <_ZNSt6vectorI12TetrisFigureSaIS0_EE12emplace_backIJS_I15PartTetrisBlockSaIS4_EE10Coordinatei6ColorsR13TetrisManagerEEEvDpOT_>
+ 800add6:	9442      	str	r4, [sp, #264]	; 0x108
+ 800add8:	9543      	str	r5, [sp, #268]	; 0x10c
 	myFigure.emplace_back(std::move(fig3), Coordinate{ 3, 2 }, 3, FIG3COLOR, man);
- 800addc:	9444      	str	r4, [sp, #272]	; 0x110
- 800adde:	f64f 5320 	movw	r3, #64800	; 0xfd20
- 800ade2:	f8ad 3116 	strh.w	r3, [sp, #278]	; 0x116
- 800ade6:	f8cd a004 	str.w	sl, [sp, #4]
- 800adea:	f50d 738b 	add.w	r3, sp, #278	; 0x116
- 800adee:	9300      	str	r3, [sp, #0]
- 800adf0:	ab44      	add	r3, sp, #272	; 0x110
- 800adf2:	aa42      	add	r2, sp, #264	; 0x108
- 800adf4:	a931      	add	r1, sp, #196	; 0xc4
- 800adf6:	4638      	mov	r0, r7
- 800adf8:	f7ff fd92 	bl	800a920 <_ZNSt6vectorI12TetrisFigureSaIS0_EE12emplace_backIJS_I15PartTetrisBlockSaIS4_EE10Coordinatei6ColorsR13TetrisManagerEEEvDpOT_>
- 800adfc:	9446      	str	r4, [sp, #280]	; 0x118
- 800adfe:	9547      	str	r5, [sp, #284]	; 0x11c
+ 800adda:	9444      	str	r4, [sp, #272]	; 0x110
+ 800addc:	f64f 5320 	movw	r3, #64800	; 0xfd20
+ 800ade0:	f8ad 3116 	strh.w	r3, [sp, #278]	; 0x116
+ 800ade4:	f8cd a004 	str.w	sl, [sp, #4]
+ 800ade8:	f50d 738b 	add.w	r3, sp, #278	; 0x116
+ 800adec:	9300      	str	r3, [sp, #0]
+ 800adee:	ab44      	add	r3, sp, #272	; 0x110
+ 800adf0:	aa42      	add	r2, sp, #264	; 0x108
+ 800adf2:	a931      	add	r1, sp, #196	; 0xc4
+ 800adf4:	4638      	mov	r0, r7
+ 800adf6:	f7ff fd93 	bl	800a920 <_ZNSt6vectorI12TetrisFigureSaIS0_EE12emplace_backIJS_I15PartTetrisBlockSaIS4_EE10Coordinatei6ColorsR13TetrisManagerEEEvDpOT_>
+ 800adfa:	9446      	str	r4, [sp, #280]	; 0x118
+ 800adfc:	9547      	str	r5, [sp, #284]	; 0x11c
 	myFigure.emplace_back(std::move(fig4), Coordinate{ 3, 2 }, 3, FIG4COLOR, man);
- 800ae00:	9448      	str	r4, [sp, #288]	; 0x120
- 800ae02:	f44f 4378 	mov.w	r3, #63488	; 0xf800
- 800ae06:	f8ad 3126 	strh.w	r3, [sp, #294]	; 0x126
- 800ae0a:	f8cd a004 	str.w	sl, [sp, #4]
- 800ae0e:	f50d 7393 	add.w	r3, sp, #294	; 0x126
- 800ae12:	9300      	str	r3, [sp, #0]
- 800ae14:	ab48      	add	r3, sp, #288	; 0x120
- 800ae16:	aa46      	add	r2, sp, #280	; 0x118
- 800ae18:	a92e      	add	r1, sp, #184	; 0xb8
- 800ae1a:	4638      	mov	r0, r7
- 800ae1c:	f7ff fd80 	bl	800a920 <_ZNSt6vectorI12TetrisFigureSaIS0_EE12emplace_backIJS_I15PartTetrisBlockSaIS4_EE10Coordinatei6ColorsR13TetrisManagerEEEvDpOT_>
- 800ae20:	944a      	str	r4, [sp, #296]	; 0x128
- 800ae22:	954b      	str	r5, [sp, #300]	; 0x12c
+ 800adfe:	9448      	str	r4, [sp, #288]	; 0x120
+ 800ae00:	f44f 4378 	mov.w	r3, #63488	; 0xf800
+ 800ae04:	f8ad 3126 	strh.w	r3, [sp, #294]	; 0x126
+ 800ae08:	f8cd a004 	str.w	sl, [sp, #4]
+ 800ae0c:	f50d 7393 	add.w	r3, sp, #294	; 0x126
+ 800ae10:	9300      	str	r3, [sp, #0]
+ 800ae12:	ab48      	add	r3, sp, #288	; 0x120
+ 800ae14:	aa46      	add	r2, sp, #280	; 0x118
+ 800ae16:	a92e      	add	r1, sp, #184	; 0xb8
+ 800ae18:	4638      	mov	r0, r7
+ 800ae1a:	f7ff fd81 	bl	800a920 <_ZNSt6vectorI12TetrisFigureSaIS0_EE12emplace_backIJS_I15PartTetrisBlockSaIS4_EE10Coordinatei6ColorsR13TetrisManagerEEEvDpOT_>
+ 800ae1e:	944a      	str	r4, [sp, #296]	; 0x128
+ 800ae20:	954b      	str	r5, [sp, #300]	; 0x12c
 	myFigure.emplace_back(std::move(fig5), Coordinate{ 3, 2 }, 3, FIG5COLOR, man);
- 800ae24:	944c      	str	r4, [sp, #304]	; 0x130
- 800ae26:	f44f 63fc 	mov.w	r3, #2016	; 0x7e0
- 800ae2a:	f8ad 3136 	strh.w	r3, [sp, #310]	; 0x136
- 800ae2e:	f8cd a004 	str.w	sl, [sp, #4]
- 800ae32:	f50d 739b 	add.w	r3, sp, #310	; 0x136
- 800ae36:	9300      	str	r3, [sp, #0]
- 800ae38:	ab4c      	add	r3, sp, #304	; 0x130
- 800ae3a:	aa4a      	add	r2, sp, #296	; 0x128
- 800ae3c:	a92b      	add	r1, sp, #172	; 0xac
- 800ae3e:	4638      	mov	r0, r7
- 800ae40:	f7ff fd6e 	bl	800a920 <_ZNSt6vectorI12TetrisFigureSaIS0_EE12emplace_backIJS_I15PartTetrisBlockSaIS4_EE10Coordinatei6ColorsR13TetrisManagerEEEvDpOT_>
- 800ae44:	944e      	str	r4, [sp, #312]	; 0x138
- 800ae46:	954f      	str	r5, [sp, #316]	; 0x13c
+ 800ae22:	944c      	str	r4, [sp, #304]	; 0x130
+ 800ae24:	f44f 63fc 	mov.w	r3, #2016	; 0x7e0
+ 800ae28:	f8ad 3136 	strh.w	r3, [sp, #310]	; 0x136
+ 800ae2c:	f8cd a004 	str.w	sl, [sp, #4]
+ 800ae30:	f50d 739b 	add.w	r3, sp, #310	; 0x136
+ 800ae34:	9300      	str	r3, [sp, #0]
+ 800ae36:	ab4c      	add	r3, sp, #304	; 0x130
+ 800ae38:	aa4a      	add	r2, sp, #296	; 0x128
+ 800ae3a:	a92b      	add	r1, sp, #172	; 0xac
+ 800ae3c:	4638      	mov	r0, r7
+ 800ae3e:	f7ff fd6f 	bl	800a920 <_ZNSt6vectorI12TetrisFigureSaIS0_EE12emplace_backIJS_I15PartTetrisBlockSaIS4_EE10Coordinatei6ColorsR13TetrisManagerEEEvDpOT_>
+ 800ae42:	944e      	str	r4, [sp, #312]	; 0x138
+ 800ae44:	954f      	str	r5, [sp, #316]	; 0x13c
 	myFigure.emplace_back(std::move(fig6), Coordinate{ 3, 2 }, 3, FIG6COLOR, man);
- 800ae48:	9450      	str	r4, [sp, #320]	; 0x140
- 800ae4a:	f647 030f 	movw	r3, #30735	; 0x780f
- 800ae4e:	f8ad 3146 	strh.w	r3, [sp, #326]	; 0x146
- 800ae52:	f8cd a004 	str.w	sl, [sp, #4]
- 800ae56:	f50d 73a3 	add.w	r3, sp, #326	; 0x146
- 800ae5a:	9300      	str	r3, [sp, #0]
- 800ae5c:	ab50      	add	r3, sp, #320	; 0x140
- 800ae5e:	aa4e      	add	r2, sp, #312	; 0x138
- 800ae60:	a928      	add	r1, sp, #160	; 0xa0
- 800ae62:	4638      	mov	r0, r7
- 800ae64:	f7ff fd5c 	bl	800a920 <_ZNSt6vectorI12TetrisFigureSaIS0_EE12emplace_backIJS_I15PartTetrisBlockSaIS4_EE10Coordinatei6ColorsR13TetrisManagerEEEvDpOT_>
- 800ae68:	9452      	str	r4, [sp, #328]	; 0x148
- 800ae6a:	9453      	str	r4, [sp, #332]	; 0x14c
+ 800ae46:	9450      	str	r4, [sp, #320]	; 0x140
+ 800ae48:	f647 030f 	movw	r3, #30735	; 0x780f
+ 800ae4c:	f8ad 3146 	strh.w	r3, [sp, #326]	; 0x146
+ 800ae50:	f8cd a004 	str.w	sl, [sp, #4]
+ 800ae54:	f50d 73a3 	add.w	r3, sp, #326	; 0x146
+ 800ae58:	9300      	str	r3, [sp, #0]
+ 800ae5a:	ab50      	add	r3, sp, #320	; 0x140
+ 800ae5c:	aa4e      	add	r2, sp, #312	; 0x138
+ 800ae5e:	a928      	add	r1, sp, #160	; 0xa0
+ 800ae60:	4638      	mov	r0, r7
+ 800ae62:	f7ff fd5d 	bl	800a920 <_ZNSt6vectorI12TetrisFigureSaIS0_EE12emplace_backIJS_I15PartTetrisBlockSaIS4_EE10Coordinatei6ColorsR13TetrisManagerEEEvDpOT_>
+ 800ae66:	9452      	str	r4, [sp, #328]	; 0x148
+ 800ae68:	9453      	str	r4, [sp, #332]	; 0x14c
 	myFigure.emplace_back(std::move(fig7), Coordinate{ 3, 3 }, 2, FIG7COLOR, man);
- 800ae6c:	9554      	str	r5, [sp, #336]	; 0x150
- 800ae6e:	f240 73ff 	movw	r3, #2047	; 0x7ff
- 800ae72:	f8ad 3156 	strh.w	r3, [sp, #342]	; 0x156
- 800ae76:	f8cd a004 	str.w	sl, [sp, #4]
- 800ae7a:	f50d 73ab 	add.w	r3, sp, #342	; 0x156
- 800ae7e:	9300      	str	r3, [sp, #0]
- 800ae80:	ab54      	add	r3, sp, #336	; 0x150
- 800ae82:	aa52      	add	r2, sp, #328	; 0x148
- 800ae84:	a925      	add	r1, sp, #148	; 0x94
- 800ae86:	4638      	mov	r0, r7
- 800ae88:	f7ff fd4a 	bl	800a920 <_ZNSt6vectorI12TetrisFigureSaIS0_EE12emplace_backIJS_I15PartTetrisBlockSaIS4_EE10Coordinatei6ColorsR13TetrisManagerEEEvDpOT_>
+ 800ae6a:	9554      	str	r5, [sp, #336]	; 0x150
+ 800ae6c:	f240 73ff 	movw	r3, #2047	; 0x7ff
+ 800ae70:	f8ad 3156 	strh.w	r3, [sp, #342]	; 0x156
+ 800ae74:	f8cd a004 	str.w	sl, [sp, #4]
+ 800ae78:	f50d 73ab 	add.w	r3, sp, #342	; 0x156
+ 800ae7c:	9300      	str	r3, [sp, #0]
+ 800ae7e:	ab54      	add	r3, sp, #336	; 0x150
+ 800ae80:	aa52      	add	r2, sp, #328	; 0x148
+ 800ae82:	a925      	add	r1, sp, #148	; 0x94
+ 800ae84:	4638      	mov	r0, r7
+ 800ae86:	f7ff fd4b 	bl	800a920 <_ZNSt6vectorI12TetrisFigureSaIS0_EE12emplace_backIJS_I15PartTetrisBlockSaIS4_EE10Coordinatei6ColorsR13TetrisManagerEEEvDpOT_>
 	_M_deallocate(_M_impl._M_start,
- 800ae8c:	9825      	ldr	r0, [sp, #148]	; 0x94
+ 800ae8a:	9825      	ldr	r0, [sp, #148]	; 0x94
 	if (__p)
- 800ae8e:	b118      	cbz	r0, 800ae98 <_Z12CreateFigureR13TetrisManager+0x522>
- 800ae90:	9927      	ldr	r1, [sp, #156]	; 0x9c
- 800ae92:	1a09      	subs	r1, r1, r0
- 800ae94:	f001 fee6 	bl	800cc64 <_ZdlPvj>
+ 800ae8c:	b118      	cbz	r0, 800ae96 <_Z12CreateFigureR13TetrisManager+0x520>
+ 800ae8e:	9927      	ldr	r1, [sp, #156]	; 0x9c
+ 800ae90:	1a09      	subs	r1, r1, r0
+ 800ae92:	f001 fee7 	bl	800cc64 <_ZdlPvj>
 	_M_deallocate(_M_impl._M_start,
- 800ae98:	9828      	ldr	r0, [sp, #160]	; 0xa0
+ 800ae96:	9828      	ldr	r0, [sp, #160]	; 0xa0
 	if (__p)
- 800ae9a:	b118      	cbz	r0, 800aea4 <_Z12CreateFigureR13TetrisManager+0x52e>
- 800ae9c:	992a      	ldr	r1, [sp, #168]	; 0xa8
- 800ae9e:	1a09      	subs	r1, r1, r0
- 800aea0:	f001 fee0 	bl	800cc64 <_ZdlPvj>
+ 800ae98:	b118      	cbz	r0, 800aea2 <_Z12CreateFigureR13TetrisManager+0x52c>
+ 800ae9a:	992a      	ldr	r1, [sp, #168]	; 0xa8
+ 800ae9c:	1a09      	subs	r1, r1, r0
+ 800ae9e:	f001 fee1 	bl	800cc64 <_ZdlPvj>
 	_M_deallocate(_M_impl._M_start,
- 800aea4:	982b      	ldr	r0, [sp, #172]	; 0xac
+ 800aea2:	982b      	ldr	r0, [sp, #172]	; 0xac
 	if (__p)
- 800aea6:	b118      	cbz	r0, 800aeb0 <_Z12CreateFigureR13TetrisManager+0x53a>
- 800aea8:	992d      	ldr	r1, [sp, #180]	; 0xb4
- 800aeaa:	1a09      	subs	r1, r1, r0
- 800aeac:	f001 feda 	bl	800cc64 <_ZdlPvj>
+ 800aea4:	b118      	cbz	r0, 800aeae <_Z12CreateFigureR13TetrisManager+0x538>
+ 800aea6:	992d      	ldr	r1, [sp, #180]	; 0xb4
+ 800aea8:	1a09      	subs	r1, r1, r0
+ 800aeaa:	f001 fedb 	bl	800cc64 <_ZdlPvj>
 	_M_deallocate(_M_impl._M_start,
- 800aeb0:	982e      	ldr	r0, [sp, #184]	; 0xb8
+ 800aeae:	982e      	ldr	r0, [sp, #184]	; 0xb8
 	if (__p)
- 800aeb2:	b118      	cbz	r0, 800aebc <_Z12CreateFigureR13TetrisManager+0x546>
- 800aeb4:	9930      	ldr	r1, [sp, #192]	; 0xc0
- 800aeb6:	1a09      	subs	r1, r1, r0
- 800aeb8:	f001 fed4 	bl	800cc64 <_ZdlPvj>
+ 800aeb0:	b118      	cbz	r0, 800aeba <_Z12CreateFigureR13TetrisManager+0x544>
+ 800aeb2:	9930      	ldr	r1, [sp, #192]	; 0xc0
+ 800aeb4:	1a09      	subs	r1, r1, r0
+ 800aeb6:	f001 fed5 	bl	800cc64 <_ZdlPvj>
 	_M_deallocate(_M_impl._M_start,
- 800aebc:	9831      	ldr	r0, [sp, #196]	; 0xc4
+ 800aeba:	9831      	ldr	r0, [sp, #196]	; 0xc4
 	if (__p)
- 800aebe:	b118      	cbz	r0, 800aec8 <_Z12CreateFigureR13TetrisManager+0x552>
- 800aec0:	9933      	ldr	r1, [sp, #204]	; 0xcc
- 800aec2:	1a09      	subs	r1, r1, r0
- 800aec4:	f001 fece 	bl	800cc64 <_ZdlPvj>
+ 800aebc:	b118      	cbz	r0, 800aec6 <_Z12CreateFigureR13TetrisManager+0x550>
+ 800aebe:	9933      	ldr	r1, [sp, #204]	; 0xcc
+ 800aec0:	1a09      	subs	r1, r1, r0
+ 800aec2:	f001 fecf 	bl	800cc64 <_ZdlPvj>
 	_M_deallocate(_M_impl._M_start,
- 800aec8:	9834      	ldr	r0, [sp, #208]	; 0xd0
+ 800aec6:	9834      	ldr	r0, [sp, #208]	; 0xd0
 	if (__p)
- 800aeca:	b118      	cbz	r0, 800aed4 <_Z12CreateFigureR13TetrisManager+0x55e>
- 800aecc:	9936      	ldr	r1, [sp, #216]	; 0xd8
- 800aece:	1a09      	subs	r1, r1, r0
- 800aed0:	f001 fec8 	bl	800cc64 <_ZdlPvj>
+ 800aec8:	b118      	cbz	r0, 800aed2 <_Z12CreateFigureR13TetrisManager+0x55c>
+ 800aeca:	9936      	ldr	r1, [sp, #216]	; 0xd8
+ 800aecc:	1a09      	subs	r1, r1, r0
+ 800aece:	f001 fec9 	bl	800cc64 <_ZdlPvj>
 	_M_deallocate(_M_impl._M_start,
- 800aed4:	9837      	ldr	r0, [sp, #220]	; 0xdc
+ 800aed2:	9837      	ldr	r0, [sp, #220]	; 0xdc
 	if (__p)
- 800aed6:	b118      	cbz	r0, 800aee0 <_Z12CreateFigureR13TetrisManager+0x56a>
- 800aed8:	9939      	ldr	r1, [sp, #228]	; 0xe4
- 800aeda:	1a09      	subs	r1, r1, r0
- 800aedc:	f001 fec2 	bl	800cc64 <_ZdlPvj>
+ 800aed4:	b118      	cbz	r0, 800aede <_Z12CreateFigureR13TetrisManager+0x568>
+ 800aed6:	9939      	ldr	r1, [sp, #228]	; 0xe4
+ 800aed8:	1a09      	subs	r1, r1, r0
+ 800aeda:	f001 fec3 	bl	800cc64 <_ZdlPvj>
 	return myFigure;
 }
- 800aee0:	4638      	mov	r0, r7
- 800aee2:	b057      	add	sp, #348	; 0x15c
- 800aee4:	e8bd 8ff0 	ldmia.w	sp!, {r4, r5, r6, r7, r8, r9, sl, fp, pc}
+ 800aede:	4638      	mov	r0, r7
+ 800aee0:	b057      	add	sp, #348	; 0x15c
+ 800aee2:	e8bd 8ff0 	ldmia.w	sp!, {r4, r5, r6, r7, r8, r9, sl, fp, pc}
 
-0800aee8 <_ZN13TetrisManagerC1Ev>:
+0800aee6 <_ZN13TetrisManagerC1Ev>:
 TetrisManager::TetrisManager()
- 800aee8:	e92d 41f0 	stmdb	sp!, {r4, r5, r6, r7, r8, lr}
- 800aeec:	b084      	sub	sp, #16
- 800aeee:	4605      	mov	r5, r0
+ 800aee6:	e92d 41f0 	stmdb	sp!, {r4, r5, r6, r7, r8, lr}
+ 800aeea:	b084      	sub	sp, #16
+ 800aeec:	4605      	mov	r5, r0
       : _M_current(_Iterator()) { }
- 800aef0:	2400      	movs	r4, #0
- 800aef2:	6004      	str	r4, [r0, #0]
- 800aef4:	6044      	str	r4, [r0, #4]
+ 800aeee:	2400      	movs	r4, #0
+ 800aef0:	6004      	str	r4, [r0, #0]
+ 800aef2:	6044      	str	r4, [r0, #4]
 	: _M_start(), _M_finish(), _M_end_of_storage()
- 800aef6:	6084      	str	r4, [r0, #8]
- 800aef8:	60c4      	str	r4, [r0, #12]
- 800aefa:	6104      	str	r4, [r0, #16]
- 800aefc:	7504      	strb	r4, [r0, #20]
- 800aefe:	6184      	str	r4, [r0, #24]
- 800af00:	61c4      	str	r4, [r0, #28]
- 800af02:	6204      	str	r4, [r0, #32]
+ 800aef4:	6084      	str	r4, [r0, #8]
+ 800aef6:	60c4      	str	r4, [r0, #12]
+ 800aef8:	6104      	str	r4, [r0, #16]
+ 800aefa:	7504      	strb	r4, [r0, #20]
+ 800aefc:	6184      	str	r4, [r0, #24]
+ 800aefe:	61c4      	str	r4, [r0, #28]
+ 800af00:	6204      	str	r4, [r0, #32]
 	  _M_default_append(__new_size - size());
- 800af04:	21c8      	movs	r1, #200	; 0xc8
- 800af06:	3008      	adds	r0, #8
- 800af08:	f7ff fa32 	bl	800a370 <_ZNSt6vectorI15PartTetrisBlockSaIS0_EE17_M_default_appendEj>
+ 800af02:	21c8      	movs	r1, #200	; 0xc8
+ 800af04:	3008      	adds	r0, #8
+ 800af06:	f7ff fa33 	bl	800a370 <_ZNSt6vectorI15PartTetrisBlockSaIS0_EE17_M_default_appendEj>
 	myFigure = CreateFigure(*this) ;
- 800af0c:	4629      	mov	r1, r5
- 800af0e:	a801      	add	r0, sp, #4
- 800af10:	f7ff fd31 	bl	800a976 <_Z12CreateFigureR13TetrisManager>
+ 800af0a:	4629      	mov	r1, r5
+ 800af0c:	a801      	add	r0, sp, #4
+ 800af0e:	f7ff fd32 	bl	800a976 <_Z12CreateFigureR13TetrisManager>
 	  _M_start = __x._M_start;
- 800af14:	69af      	ldr	r7, [r5, #24]
+ 800af12:	69af      	ldr	r7, [r5, #24]
 	  _M_finish = __x._M_finish;
- 800af16:	69ee      	ldr	r6, [r5, #28]
+ 800af14:	69ee      	ldr	r6, [r5, #28]
 	  _M_end_of_storage = __x._M_end_of_storage;
- 800af18:	f8d5 8020 	ldr.w	r8, [r5, #32]
+ 800af16:	f8d5 8020 	ldr.w	r8, [r5, #32]
 	  _M_start = __x._M_start;
- 800af1c:	9b01      	ldr	r3, [sp, #4]
- 800af1e:	61ab      	str	r3, [r5, #24]
+ 800af1a:	9b01      	ldr	r3, [sp, #4]
+ 800af1c:	61ab      	str	r3, [r5, #24]
 	  _M_finish = __x._M_finish;
- 800af20:	9b02      	ldr	r3, [sp, #8]
- 800af22:	61eb      	str	r3, [r5, #28]
+ 800af1e:	9b02      	ldr	r3, [sp, #8]
+ 800af20:	61eb      	str	r3, [r5, #28]
 	  _M_end_of_storage = __x._M_end_of_storage;
- 800af24:	9b03      	ldr	r3, [sp, #12]
- 800af26:	622b      	str	r3, [r5, #32]
+ 800af22:	9b03      	ldr	r3, [sp, #12]
+ 800af24:	622b      	str	r3, [r5, #32]
 	  _M_start = __x._M_start;
- 800af28:	9401      	str	r4, [sp, #4]
+ 800af26:	9401      	str	r4, [sp, #4]
 	  _M_finish = __x._M_finish;
- 800af2a:	9402      	str	r4, [sp, #8]
+ 800af28:	9402      	str	r4, [sp, #8]
 	  _M_end_of_storage = __x._M_end_of_storage;
- 800af2c:	9403      	str	r4, [sp, #12]
+ 800af2a:	9403      	str	r4, [sp, #12]
     {
       template<typename _ForwardIterator>
 	static _GLIBCXX20_CONSTEXPR void
 	__destroy(_ForwardIterator __first, _ForwardIterator __last)
 	{
 	  for (; __first != __last; ++__first)
- 800af2e:	42b7      	cmp	r7, r6
- 800af30:	d018      	beq.n	800af64 <_ZN13TetrisManagerC1Ev+0x7c>
- 800af32:	463c      	mov	r4, r7
- 800af34:	e002      	b.n	800af3c <_ZN13TetrisManagerC1Ev+0x54>
- 800af36:	3444      	adds	r4, #68	; 0x44
- 800af38:	42a6      	cmp	r6, r4
- 800af3a:	d013      	beq.n	800af64 <_ZN13TetrisManagerC1Ev+0x7c>
+ 800af2c:	42b7      	cmp	r7, r6
+ 800af2e:	d018      	beq.n	800af62 <_ZN13TetrisManagerC1Ev+0x7c>
+ 800af30:	463c      	mov	r4, r7
+ 800af32:	e002      	b.n	800af3a <_ZN13TetrisManagerC1Ev+0x54>
+ 800af34:	3444      	adds	r4, #68	; 0x44
+ 800af36:	42a6      	cmp	r6, r4
+ 800af38:	d013      	beq.n	800af62 <_ZN13TetrisManagerC1Ev+0x7c>
 	_M_deallocate(_M_impl._M_start,
- 800af3c:	69a0      	ldr	r0, [r4, #24]
+ 800af3a:	69a0      	ldr	r0, [r4, #24]
 	if (__p)
- 800af3e:	b118      	cbz	r0, 800af48 <_ZN13TetrisManagerC1Ev+0x60>
+ 800af3c:	b118      	cbz	r0, 800af46 <_ZN13TetrisManagerC1Ev+0x60>
 		      _M_impl._M_end_of_storage - _M_impl._M_start);
- 800af40:	6a21      	ldr	r1, [r4, #32]
- 800af42:	1a09      	subs	r1, r1, r0
- 800af44:	f001 fe8e 	bl	800cc64 <_ZdlPvj>
+ 800af3e:	6a21      	ldr	r1, [r4, #32]
+ 800af40:	1a09      	subs	r1, r1, r0
+ 800af42:	f001 fe8f 	bl	800cc64 <_ZdlPvj>
 	_M_deallocate(_M_impl._M_start,
- 800af48:	68e0      	ldr	r0, [r4, #12]
+ 800af46:	68e0      	ldr	r0, [r4, #12]
 	if (__p)
- 800af4a:	b118      	cbz	r0, 800af54 <_ZN13TetrisManagerC1Ev+0x6c>
+ 800af48:	b118      	cbz	r0, 800af52 <_ZN13TetrisManagerC1Ev+0x6c>
 		      _M_impl._M_end_of_storage - _M_impl._M_start);
- 800af4c:	6961      	ldr	r1, [r4, #20]
- 800af4e:	1a09      	subs	r1, r1, r0
- 800af50:	f001 fe88 	bl	800cc64 <_ZdlPvj>
+ 800af4a:	6961      	ldr	r1, [r4, #20]
+ 800af4c:	1a09      	subs	r1, r1, r0
+ 800af4e:	f001 fe89 	bl	800cc64 <_ZdlPvj>
 	_M_deallocate(_M_impl._M_start,
- 800af54:	6820      	ldr	r0, [r4, #0]
+ 800af52:	6820      	ldr	r0, [r4, #0]
 	if (__p)
- 800af56:	2800      	cmp	r0, #0
- 800af58:	d0ed      	beq.n	800af36 <_ZN13TetrisManagerC1Ev+0x4e>
+ 800af54:	2800      	cmp	r0, #0
+ 800af56:	d0ed      	beq.n	800af34 <_ZN13TetrisManagerC1Ev+0x4e>
 		      _M_impl._M_end_of_storage - _M_impl._M_start);
- 800af5a:	68a1      	ldr	r1, [r4, #8]
- 800af5c:	1a09      	subs	r1, r1, r0
- 800af5e:	f001 fe81 	bl	800cc64 <_ZdlPvj>
- 800af62:	e7e8      	b.n	800af36 <_ZN13TetrisManagerC1Ev+0x4e>
+ 800af58:	68a1      	ldr	r1, [r4, #8]
+ 800af5a:	1a09      	subs	r1, r1, r0
+ 800af5c:	f001 fe82 	bl	800cc64 <_ZdlPvj>
+ 800af60:	e7e8      	b.n	800af34 <_ZN13TetrisManagerC1Ev+0x4e>
 	if (__p)
- 800af64:	b127      	cbz	r7, 800af70 <_ZN13TetrisManagerC1Ev+0x88>
- 800af66:	eba8 0107 	sub.w	r1, r8, r7
- 800af6a:	4638      	mov	r0, r7
- 800af6c:	f001 fe7a 	bl	800cc64 <_ZdlPvj>
+ 800af62:	b127      	cbz	r7, 800af6e <_ZN13TetrisManagerC1Ev+0x88>
+ 800af64:	eba8 0107 	sub.w	r1, r8, r7
+ 800af68:	4638      	mov	r0, r7
+ 800af6a:	f001 fe7b 	bl	800cc64 <_ZdlPvj>
 	std::_Destroy(this->_M_impl._M_start, this->_M_impl._M_finish,
- 800af70:	9c01      	ldr	r4, [sp, #4]
- 800af72:	9e02      	ldr	r6, [sp, #8]
- 800af74:	42b4      	cmp	r4, r6
- 800af76:	d11b      	bne.n	800afb0 <_ZN13TetrisManagerC1Ev+0xc8>
+ 800af6e:	9c01      	ldr	r4, [sp, #4]
+ 800af70:	9e02      	ldr	r6, [sp, #8]
+ 800af72:	42b4      	cmp	r4, r6
+ 800af74:	d11b      	bne.n	800afae <_ZN13TetrisManagerC1Ev+0xc8>
 	_M_deallocate(_M_impl._M_start,
- 800af78:	9801      	ldr	r0, [sp, #4]
+ 800af76:	9801      	ldr	r0, [sp, #4]
 	if (__p)
- 800af7a:	b118      	cbz	r0, 800af84 <_ZN13TetrisManagerC1Ev+0x9c>
- 800af7c:	9903      	ldr	r1, [sp, #12]
- 800af7e:	1a09      	subs	r1, r1, r0
- 800af80:	f001 fe70 	bl	800cc64 <_ZdlPvj>
+ 800af78:	b118      	cbz	r0, 800af82 <_ZN13TetrisManagerC1Ev+0x9c>
+ 800af7a:	9903      	ldr	r1, [sp, #12]
+ 800af7c:	1a09      	subs	r1, r1, r0
+ 800af7e:	f001 fe71 	bl	800cc64 <_ZdlPvj>
       : _M_current(__i) { }
- 800af84:	69ac      	ldr	r4, [r5, #24]
+ 800af82:	69ac      	ldr	r4, [r5, #24]
 	nextFigure = myFigure.begin() + generator.generate(0, QUANTITY_FIGURE - 1);
- 800af86:	2206      	movs	r2, #6
- 800af88:	2100      	movs	r1, #0
- 800af8a:	f105 0024 	add.w	r0, r5, #36	; 0x24
- 800af8e:	f7fe fdaf 	bl	8009af0 <_ZN16random_generator8generateEll>
+ 800af84:	2206      	movs	r2, #6
+ 800af86:	2100      	movs	r1, #0
+ 800af88:	f105 0024 	add.w	r0, r5, #36	; 0x24
+ 800af8c:	f7fe fdb0 	bl	8009af0 <_ZN16random_generator8generateEll>
       { return __normal_iterator(_M_current + __n); }
- 800af92:	eb00 1000 	add.w	r0, r0, r0, lsl #4
- 800af96:	eb04 0080 	add.w	r0, r4, r0, lsl #2
- 800af9a:	6068      	str	r0, [r5, #4]
+ 800af90:	eb00 1000 	add.w	r0, r0, r0, lsl #4
+ 800af94:	eb04 0080 	add.w	r0, r4, r0, lsl #2
+ 800af98:	6068      	str	r0, [r5, #4]
 	GenerateNewFigure();
- 800af9c:	4628      	mov	r0, r5
- 800af9e:	f7fe fdf7 	bl	8009b90 <_ZN13TetrisManager17GenerateNewFigureEv>
+ 800af9a:	4628      	mov	r0, r5
+ 800af9c:	f7fe fdf8 	bl	8009b90 <_ZN13TetrisManager17GenerateNewFigureEv>
 }
- 800afa2:	4628      	mov	r0, r5
- 800afa4:	b004      	add	sp, #16
- 800afa6:	e8bd 81f0 	ldmia.w	sp!, {r4, r5, r6, r7, r8, pc}
- 800afaa:	3444      	adds	r4, #68	; 0x44
- 800afac:	42a6      	cmp	r6, r4
- 800afae:	d0e3      	beq.n	800af78 <_ZN13TetrisManagerC1Ev+0x90>
+ 800afa0:	4628      	mov	r0, r5
+ 800afa2:	b004      	add	sp, #16
+ 800afa4:	e8bd 81f0 	ldmia.w	sp!, {r4, r5, r6, r7, r8, pc}
+ 800afa8:	3444      	adds	r4, #68	; 0x44
+ 800afaa:	42a6      	cmp	r6, r4
+ 800afac:	d0e3      	beq.n	800af76 <_ZN13TetrisManagerC1Ev+0x90>
 	_M_deallocate(_M_impl._M_start,
- 800afb0:	69a0      	ldr	r0, [r4, #24]
+ 800afae:	69a0      	ldr	r0, [r4, #24]
 	if (__p)
- 800afb2:	b118      	cbz	r0, 800afbc <_ZN13TetrisManagerC1Ev+0xd4>
+ 800afb0:	b118      	cbz	r0, 800afba <_ZN13TetrisManagerC1Ev+0xd4>
 		      _M_impl._M_end_of_storage - _M_impl._M_start);
- 800afb4:	6a21      	ldr	r1, [r4, #32]
- 800afb6:	1a09      	subs	r1, r1, r0
- 800afb8:	f001 fe54 	bl	800cc64 <_ZdlPvj>
+ 800afb2:	6a21      	ldr	r1, [r4, #32]
+ 800afb4:	1a09      	subs	r1, r1, r0
+ 800afb6:	f001 fe55 	bl	800cc64 <_ZdlPvj>
 	_M_deallocate(_M_impl._M_start,
- 800afbc:	68e0      	ldr	r0, [r4, #12]
+ 800afba:	68e0      	ldr	r0, [r4, #12]
 	if (__p)
- 800afbe:	b118      	cbz	r0, 800afc8 <_ZN13TetrisManagerC1Ev+0xe0>
+ 800afbc:	b118      	cbz	r0, 800afc6 <_ZN13TetrisManagerC1Ev+0xe0>
 		      _M_impl._M_end_of_storage - _M_impl._M_start);
- 800afc0:	6961      	ldr	r1, [r4, #20]
- 800afc2:	1a09      	subs	r1, r1, r0
- 800afc4:	f001 fe4e 	bl	800cc64 <_ZdlPvj>
+ 800afbe:	6961      	ldr	r1, [r4, #20]
+ 800afc0:	1a09      	subs	r1, r1, r0
+ 800afc2:	f001 fe4f 	bl	800cc64 <_ZdlPvj>
 	_M_deallocate(_M_impl._M_start,
- 800afc8:	6820      	ldr	r0, [r4, #0]
+ 800afc6:	6820      	ldr	r0, [r4, #0]
 	if (__p)
- 800afca:	2800      	cmp	r0, #0
- 800afcc:	d0ed      	beq.n	800afaa <_ZN13TetrisManagerC1Ev+0xc2>
+ 800afc8:	2800      	cmp	r0, #0
+ 800afca:	d0ed      	beq.n	800afa8 <_ZN13TetrisManagerC1Ev+0xc2>
 		      _M_impl._M_end_of_storage - _M_impl._M_start);
- 800afce:	68a1      	ldr	r1, [r4, #8]
- 800afd0:	1a09      	subs	r1, r1, r0
- 800afd2:	f001 fe47 	bl	800cc64 <_ZdlPvj>
- 800afd6:	e7e8      	b.n	800afaa <_ZN13TetrisManagerC1Ev+0xc2>
+ 800afcc:	68a1      	ldr	r1, [r4, #8]
+ 800afce:	1a09      	subs	r1, r1, r0
+ 800afd0:	f001 fe48 	bl	800cc64 <_ZdlPvj>
+ 800afd4:	e7e8      	b.n	800afa8 <_ZN13TetrisManagerC1Ev+0xc2>
+	...
 
 0800afd8 <_Z19TetrisButtonHandlerR12TetrisFigureRm>:
 extern but::ButtonWrapper* but3;
@@ -20182,7 +20182,7 @@ void PrintTetrisInterface()
  800b3b0:	f7ff ff4c 	bl	800b24c <_Z20PrintTetrisInterfacev>
 	TetrisManager manager;
  800b3b4:	a806      	add	r0, sp, #24
- 800b3b6:	f7ff fd97 	bl	800aee8 <_ZN13TetrisManagerC1Ev>
+ 800b3b6:	f7ff fd96 	bl	800aee6 <_ZN13TetrisManagerC1Ev>
 	uint32_t delay = TETRIS_HIGH_DELAY, time = HAL_GetTick();
  800b3ba:	f44f 73fa 	mov.w	r3, #500	; 0x1f4
  800b3be:	9305      	str	r3, [sp, #20]
